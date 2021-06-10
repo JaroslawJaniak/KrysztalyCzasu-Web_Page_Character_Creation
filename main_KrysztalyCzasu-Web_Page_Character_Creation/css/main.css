@@ -1,0 +1,84 @@
+* {
+	margin: 0;
+	padding: 0;
+	color: inherit;
+	box-sizing: border-box;
+	background: #fff;
+}
+
+html {
+	font-family: sans-serif;
+	scroll-behavior: smooth;
+	overflow: scroll;
+	overflow-x: hidden;
+	background-color: #222;
+}
+
+body {
+	-webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+	background-color: #222;
+	background-image: linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+	font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-size:12px;
+	height:100vh;
+	padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-right, 0px);
+	width:100%;
+}
+
+h1 {
+	font-weight: 100;
+}
+
+p {
+	width: 75%;
+	margin-left: 2.5rem;
+}
+
+.main {
+	display: grid;
+	grid-template-columns: 20%  80%;
+	max-width: 90em;
+	margin: 0 auto;
+	border:1px solid #efefef;
+}
+
+.main__container__sections {
+	position: relative;
+}
+
+.window__InnerSize {
+	position: fixed;
+	bottom: 1.0rem;
+	right: 0.5rem;
+	padding: 0.5rem;
+}
+
+@media only screen and (max-width:920px) {
+  .main  {
+		display: block;
+		width:100%;
+  }
+
+  .main > *  {
+		display: block;
+		width:100%;
+		margin: 0;
+		padding:0;
+		z-index: 1;
+  }
+
+  .section--nav {
+		position: -webkit-sticky;
+		position: sticky;
+		top:0.5rem;
+		padding-left: 0;
+		width: 100%;
+		height: 500px;
+		z-index:1;
+  }
+
+  .main__content-header__sticky {
+		display: none;
+  }
+}

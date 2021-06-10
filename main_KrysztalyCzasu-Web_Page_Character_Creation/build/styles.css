@@ -1,0 +1,549 @@
+/* Grunt concat file - 2020-05-21 */
+
+* {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  box-sizing: border-box;
+  
+}
+
+html {
+  font-family: sans-serif;
+	scroll-behavior: smooth;
+	overflow: scroll;
+	overflow-x: hidden;
+	background-color: #222;
+}
+
+body {
+  -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+  background-image: linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+  font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size:12px;
+  height:100vh;
+  padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-right, 0px);
+  
+  
+}
+
+h1 {
+  font-weight: 100;
+}
+
+p {
+	width: 75%;
+	margin-left: 2.5rem;
+}
+
+.cards__container > ul {
+    list-style: none;
+}
+
+.cards__item + .cards__item {
+    margin-top: 1.5rem;
+}
+
+@supports (display: grid) {
+    .cards > ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(13.5rem, 1fr));
+        grid-column-gap: 0.5rem;
+        grid-row-gap: 1rem;
+    }
+
+    .cards__item + .cards__item {
+        margin-top: 1.5rem;
+    }
+}
+
+.cards__item {
+  	border: 1px solid;
+  	border-radius: 0.25rem;
+  	display: flex;
+  	flex-direction: column;
+  	position: relative;
+	margin-top: 1.5rem;
+}
+
+.cards__item .cards__item-text {
+  	padding: 1rem;
+  	flex: 1 0 auto;
+  	display: flex;
+  	flex-direction: column;
+}
+
+.cards__item p {
+  	max-width: 60ch;
+}
+
+.cards__item .cards__item-img {
+  	height: 6.5rem;
+  	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 1rem));
+}
+
+.cards__item .cards__item-img img {
+  	width: 100%;
+  	height: 100%;
+  	object-fit: cover;
+  	filter: grayscale(100%);
+}
+
+.cards__item a {
+  	text-decoration: none;
+}
+
+.cards__item a::after {
+  	content: '';
+  	position: absolute;
+  	left: 0;
+  	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.cards__item a:focus {
+	outline: none;
+	text-decoration: underline;
+}
+
+.cards__item:focus-within {
+	box-shadow: -0px 2px 8px 0.1rem;
+	top: -4px;
+}
+
+.cards__item:hover {
+	box-shadow: -0px 2px 8px 0.1rem;
+	top: -4px;
+	transition: all 0.25s;
+	transition-timing-function: ease;
+}
+
+.cards__item h2 a:focus {
+    text-decoration: underline;
+}
+
+.cards__item:focus-within a:focus {
+  	text-decoration: none;
+}
+
+.cards__item h2:focus-within ~ .cards__item-text_readmore {
+    color: red;
+}
+
+.cards__item-text_readmore {
+	border-radius: 0.25rem;
+	text-align: center;
+	display: block;
+}
+
+.cards__item small {
+  	display: block;
+}
+
+.cards__item .cards__item-text > * + * {
+  margin-top: 0.75rem;
+}
+
+.cards__item .cards__item-text > :last-child {
+  margin-top: auto;
+  padding-top: 0.75rem;
+}
+
+
+@media only screen and (max-width:920px) {
+  @supports (display: grid) {
+    .cards > ul {
+      padding-inline-start: 0px;
+    }
+
+    .cards__item + .cards__item {
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+.main__content-subsection > h4 + div {
+	width: 75%;
+}
+
+h4 .collapsible-sections--item__button {
+	all: inherit;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0.0em;
+	border: 1px solid #efefef;
+	border-radius: 0.25rem;
+}
+
+h4 .collapsible-sections--item__button:focus svg {
+	outline: 2px solid;
+}
+
+.collapsible-sections--item__button svg {
+	height: 1em;
+	margin-left: 0.5em;
+	margin-right: 0.5rem;
+}
+
+.collapsible-sections--item__button:hover {
+	cursor: pointer;
+}
+
+[aria-expanded="true"] .collapsible-sections--item__button__vert {
+	opacity: 0.0;
+	transition: all 100ms;
+}
+
+[aria-expanded] rect {
+  fill: currentColor;
+}
+
+.collapsible-sections--item__content--section {
+	margin: 0;
+	padding: 0.5rem;
+	position: relative;
+	width: 100%;
+}
+
+.collapsible-section__item----content{
+	overflow-x: hidden;
+}
+
+.target-unexpanded {
+	height: 0;
+	opacity: 0.0;
+	padding: 0.5rem;
+	border: 1px solid #efefef;
+	border-radius: 0.25rem;
+	overflow: auto;
+	overflow-y: hidden;
+}
+
+.target-expanded {
+	height: 80%;
+	opacity: 1.0;
+	padding: 0.5rem;
+	border: 1px solid #efefef;
+	border-radius: 0.25rem;
+	overflow: auto;
+	overflow-y: hidden;
+}
+
+.links-list, .menu__unordered-list, .menu__ordered-list, character__summary_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.links-list__item, .menu__item, .character__summary__item {
+    margin-left: 1rem;
+}
+
+.links-list__item__link, .menu__link {
+	color: #666;
+	text-decoration: none;
+    display: block;
+    padding: .125rem 0;
+	transition: all 0.5s;
+}
+
+.links-list__item__link:hover,
+.links-list__item__link:focus {
+    color: red;
+	font-weight: 450;
+	padding-left: 0.25rem;
+	background: linear-gradient(to right, rgba(255,0,0, 0.1) 0%, rgba(255,255,255, 0.5) 100%);
+	border-radius: 2px;
+}
+
+.main__content-header__sticky {
+	
+	top:0.5rem;
+	left: 0;
+	font-size: 0.5rem;
+	width: 75%;
+	margin: auto;
+	z-index: 2;
+	background-color: rgb(255,255,255); /* Black fallback color */
+	background-color: rgba(255,255,255, 0.5); /* Black w/opacity */
+	background: linear-gradient(to bottom, rgba(255,255,255, 0.5) 0%, rgba(255,255,255, 0.5) 100%);
+	border: 0px solid #efefef;
+	border-radius: 0.25rem;
+	transition: all 500ms ease-out;
+	text-align:center;
+}
+
+.main__content-header__on-scroll {
+	opacity: 0.25;
+}
+
+.main__content-header__sticky:hover {
+	opacity: 1.0;
+}
+
+.main__content-section {
+	margin-bottom:10rem;
+	padding-top: 2.5rem;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+  padding-bottom: 0rem;
+	overflow: scroll;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.main__content-section > h2, .main__content-section > h3{
+	width: 100%;
+	margin-bottom:1.5rem;
+	padding-left: 0.5rem;
+	border-bottom: 1px solid #efefef;
+}
+
+.main__content-subsection {
+	margin-bottom:10rem;
+	padding-top: 1.5rem;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+  padding-bottom: 0rem;
+	overflow: scroll;
+	overflow-x: hidden;
+	overflow-y: hidden;
+
+	border: 1px solid #efefef;
+	min-height: 947px;
+}
+
+.main__content-subsection > h2, h3.stylized{
+	width: 100%;
+	margin-bottom:1.5rem;
+	padding-left: 0.5rem;
+	border-bottom: 1px solid #efefef;
+}
+
+
+.main {
+  display: grid;
+  grid-template-columns: 20%  60% 20%;
+  padding: 8px;
+  max-width: 128em;
+  margin: 0 auto;
+  border:1px solid #efefef;
+  background-color: #fff;
+  
+}
+
+.main__container__sections {
+	position: relative;
+}
+
+.window__InnerSize {
+	position: fixed;
+	bottom: 1.0rem;
+	right: 0.5rem;
+	padding: 0.5rem;
+}
+
+@media only screen and (max-width:920px) {
+  .main  {
+		display: block;
+		width:100%;
+  }
+
+  .main > *  {
+	  display: block;
+	  width:100%;
+	  margin: 0;
+	  padding:0;
+	  z-index: 1;
+  }
+
+  .section--nav {
+		position: -webkit-sticky;
+    	position: sticky;
+		top:0.5rem;
+		padding-left: 0;
+		width: 100%;
+		height: 500px;
+		z-index:1;
+  }
+
+  .main__content-header__sticky {
+	  display: none;
+  }
+}
+
+.section--nav {
+  	position: sticky;
+	height: 90vh;
+	top: 1.5rem;
+  	align-self: start;
+  	border-right: 1px solid #efefef;
+	background-color: rgba(0, 0, 0, 0.0);;
+}
+
+.section--nav * {
+	background-color: transparent;
+	padding-bottom: 0.25rem;
+}
+
+.section--nav__overlay {
+	height: 100%;
+	width: 100%;
+	z-index: 7;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	transition: all 500ms ease;
+}
+
+.overlay-content, character__summary {
+	position: relative;
+	margin-top: 3.5rem;
+	height: 100%;
+	width: 100%;
+}
+
+.overlay-content ol {
+	height: 100%;
+	width: 100%;
+}
+
+.menu__button__openbtn {
+	position: fixed;
+	z-index: 2;
+	text-decoration: none;
+	font-size:2.5rem;
+
+	}
+
+.menu__button__closebtn {
+	visibility: visible;
+	position: absolute;
+	top: 1.5rem;
+	right: 0;
+	font-size: 1.5rem;
+	z-index: 8;
+}
+
+.menu__button__openbtn, .menu__button__closebtn {
+	color: #efefef;
+	border: 0px solid #efefef;
+	border-radius: 0.25rem;
+	transition-duration: 0.3s;
+	cursor: pointer;
+}
+
+.menu__button__openbtn:hover, .menu__button__closebtn:hover  {
+	color: #111;
+}
+
+.menu__button__openbtn:focus, .menu__button__closebtn:focus{
+  color: #111;
+	outline: none;
+}
+
+.section--nav__overlay a{
+  	font-size: 0.8rem;
+	text-decoration: none;
+  	display: block;
+  	padding: .125rem 0;
+  	color: #ccc;
+  	transition: all 500ms ease-out;
+}
+
+.section--nav li.active > a {
+    color: #333;
+    font-weight: 500;
+	padding-left: 0.75rem;
+	transition: all 200ms ease-in;
+}
+
+.section--nav li.unactive > a {
+	padding-left: 0px;
+	transition: all 500ms ease-out;
+}
+
+.section--nav .overlay-content a:hover,
+.section--nav .overlay-content a:focus {
+	padding-left: 0.45rem;
+	color: red;
+	background: linear-gradient(to right, rgba(255,0,0, 0.1) 0%, rgba(255,255,255, 0.5) 100%);
+	border-radius: 2px;
+	transition: 500ms;
+}
+
+@media only screen and (max-width:920px) {
+	.section--nav {
+		height: auto;
+	}
+
+	.section--nav * {
+		background-color: transparent;
+		padding-bottom: 0.1rem;
+	}
+
+	.section--nav__overlay {
+		background: linear-gradient(to right, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0.5) 100%);
+	}
+
+	.section--nav__overlay a{
+		font-size: 0.75rem;
+	}
+
+	.section--nav .overlay-content a:hover,
+	.section--nav .overlay-content a:focus {
+  	background: linear-gradient(to right, rgba(255,0,0, 0.1) 0%, rgba(255,255,255, 0.5) 100%);
+  	border-radius: 2px;
+  	transition: 500ms;
+  }
+}
+
+collapsible-section__container::-webkit-scrollbar {
+  width: 10px;
+}
+
+collapsible-section__container::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey;
+  border-radius: 10px;
+}
+
+collapsible-section__container::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 10px;
+}
+
+collapsible-section__container::-webkit-scrollbar-thumb:hover {
+background: #000;
+}
+
+collapsible-section__item--content::-webkit-scrollbar {
+  width: 10px;
+}
+
+collapsible-section__item--content::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey;
+  border-radius: 10px;
+}
+
+collapsible-section__item--content::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 10px;
+}
+
+collapsible-section__item--content::-webkit-scrollbar-thumb:hover {
+background: #000;
+}
+
+.character__summary_active {
+	color: rgb(255, 255, 255);
+    background-color: black;
+    transition: all 0.251s;
+}
+
+.character__summary_unactive {
+	color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    transition: all 0.1s;
+}

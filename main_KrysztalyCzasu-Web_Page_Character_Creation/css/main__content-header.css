@@ -1,0 +1,24 @@
+.main__content-header__sticky {
+	position: sticky;
+	top:0.5rem;
+	left: 0;
+	font-size: 0.5rem;
+	width: 75%;
+	margin: auto;
+	z-index: 2;
+	background-color: rgb(255,255,255); /* Black fallback color */
+	background-color: rgba(255,255,255, 0.5); /* Black w/opacity */
+	background: linear-gradient(to bottom, rgba(255,255,255, 0.5) 0%, rgba(255,255,255, 0.5) 100%);
+	border: 1px solid #efefef;
+	border-radius: 0.25rem;
+	transition: all 500ms ease-out;
+	text-align:center;
+}
+
+.main__content-header__on-scroll {
+	opacity: 0.5;
+}
+
+.main__content-header__sticky:hover {
+	opacity: 1.0;
+}

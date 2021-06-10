@@ -1,0 +1,35 @@
+collapsible-section__container::-webkit-scrollbar {
+  width: 10px;
+}
+
+collapsible-section__container::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey;
+  border-radius: 10px;
+}
+
+collapsible-section__container::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 10px;
+}
+
+collapsible-section__container::-webkit-scrollbar-thumb:hover {
+background: #000;
+}
+
+collapsible-section__item::-webkit-scrollbar {
+  width: 10px;
+}
+
+collapsible-section__item::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey;
+  border-radius: 10px;
+}
+
+collapsible-section__item::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 10px;
+}
+
+collapsible-section__item::-webkit-scrollbar-thumb:hover {
+background: #000;
+}

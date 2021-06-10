@@ -1,0 +1,32 @@
+.activeCheckbox {
+    opacity: 1;
+    color: rgb(0, 0, 0);
+    
+    border-radius: 0.25rem;
+    transition: all 0.1s;
+  }
+  
+.unactiveCheckbox{
+    opacity: 0.2;
+    color: black;
+    background-color: #ffffff;
+    transition: all 0.1s; 
+}
+
+.checkbox_container {
+  padding: 0.8rem;
+}
+
+
+.subprofession {
+  margin-top: 1.0rem;
+}
+
+.checkbox__container {
+  position: absolute;
+  right: 50px;
+  display: inline;
+}
+
+
+

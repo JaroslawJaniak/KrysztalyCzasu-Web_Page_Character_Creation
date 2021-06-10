@@ -1,0 +1,170 @@
+.kc_logo {
+  display: block;
+  margin: auto;
+}
+
+table.table_origin {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 640px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.td__k100 {
+  width: 50px;
+  font-weight: bold;
+}
+
+td.td_height, td.td_weight {
+  border-left: none;
+  border-right: none;
+}
+
+table.table_height_weight {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 640px;
+  
+}
+
+.unactiveSection {
+  display: none;
+}
+
+tr.tr_height_weight > td {
+  text-align: center;
+}
+
+table.table_base-stats {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 640px;
+}
+
+td.table_base-stats_race {
+  border-top: 0px;
+  border-bottom: 0px;
+  
+}
+td.table_base-stats_female {
+  border-bottom: 1px solid #dddddd;;
+}
+
+/*
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+*/
+
+.activeTrTable {
+  color: white;
+  background-color: #000000;
+  transition: all 0.15s; 
+}
+
+img#map {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.unordered-list, .ordered-list, .character__summary_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.character__summary_list {
+  position: sticky;
+	height: 90vh;
+	top: 1.5rem;
+  align-self: start;
+  border-right: 1px solid #efefef;
+	background-color: rgba(0, 0, 0, 0.0);;
+}
+
+.character__summary__item1 {
+  font-weight: bold;
+}
+
+.character__summary__item1 span {
+  font-weight: normal;
+}
+
+.button_inline {
+  display: inline;
+}
+
+
+
+
+
+/*footer*/
+footer
+{border:1px solid #111; margin:2vmin; padding:8px; width: 25vw; background-color: #fff;}
+
+
+
+.progress-container {
+  position: -webkit-sticky;
+    position: sticky;
+    top: 40px;
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    width: 100%;
+    height: 8px;
+    background: #fff;
+    border-radius: 4px;
+    
+  }
+  
+  .progress-bar {
+    height: 8px;
+    width: 0%;
+    background: #000;
+    border-radius: 4px;
+  }
+  
+  footer {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    
+  }
+
+  footer p {
+    margin: auto;
+  }
+  
+  @keyframes fade {
+      from { opacity: 1.0; }
+      50% { opacity: 0.4; }
+      to { opacity: 1.0; }
+  }
+   
+  @-webkit-keyframes fade {
+      from { opacity: 1.0; }
+      50% { opacity: 0.4; }
+      to { opacity: 1.0; }
+  }
+   
+  .blink {
+      animation:fade 3000ms infinite;
+      -webkit-animation:fade 3000ms infinite;
+  }
+
+  /*
+  .nav_section {
+    position: absolute;
+  }
+  */

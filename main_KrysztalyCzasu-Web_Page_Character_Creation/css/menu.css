@@ -1,0 +1,125 @@
+.section--nav {
+  position: sticky;
+	height: 90vh;
+	top: 1.5rem;
+  align-self: start;
+  border-right: 1px solid #efefef;
+	background-color: rgba(0, 0, 0, 0.0);;
+}
+
+.section--nav * {
+	background-color: transparent;
+	padding-bottom: 0.25rem;
+}
+
+.section--nav__overlay {
+	height: 100%;
+	width: 100%;
+	z-index: 7;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	transition: all 500ms ease;
+}
+
+.overlay-content {
+	position: relative;
+	margin-top: 3.5rem;
+	height: 100%;
+	width: 100%;
+}
+
+.overlay-content ol {
+	height: 100%;
+	width: 100%;
+}
+
+.menu__button__openbtn {
+	position: fixed;
+	z-index: 2;
+	text-decoration: none;
+	font-size:2.5rem;
+
+	}
+
+.menu__button__closebtn {
+	visibility: visible;
+	position: absolute;
+	top: 1.5rem;
+	right: 0;
+	font-size: 1.5rem;
+	z-index: 8;
+}
+
+.menu__button__openbtn, .menu__button__closebtn {
+	color: #efefef;
+	border: 0px solid #efefef;
+	border-radius: 0.25rem;
+	transition-duration: 0.3s;
+	cursor: pointer;
+}
+
+.menu__button__openbtn:hover, .menu__button__closebtn:hover  {
+	color: #111;
+}
+
+.menu__button__openbtn:focus, .menu__button__closebtn:focus{
+  color: #111;
+	outline: none;
+}
+
+.section--nav__overlay a{
+  font-size: 0.8rem;
+	text-decoration: none;
+  display: block;
+  padding: .125rem 0;
+  color: #ccc;
+  transition: all 500ms ease-out;
+}
+
+.section--nav li.active > a {
+    color: #333;
+    font-weight: 500;
+	padding-left: 0.75rem;
+	transition: all 200ms ease-in;
+	
+}
+
+.section--nav li.unactive > a {
+	padding-left: 0px;
+	transition: all 500ms ease-out;
+}
+
+.section--nav .overlay-content a:hover,
+.section--nav .overlay-content a:focus {
+	padding-left: 0.45rem;
+	color: red;
+	background: linear-gradient(to right, rgba(255,0,0, 0.1) 0%, rgba(255,255,255, 0.5) 100%);
+	border-radius: 2px;
+	transition: 500ms;
+}
+
+@media only screen and (max-width:920px) {
+	.section--nav {
+		height: auto;
+	}
+
+	.section--nav * {
+		background-color: transparent;
+		padding-bottom: 0.1rem;
+	}
+
+	.section--nav__overlay {
+		background: linear-gradient(to right, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0.5) 100%);
+	}
+
+	.section--nav__overlay a{
+		font-size: 0.75rem;
+	}
+
+	.section--nav .overlay-content a:hover,
+	.section--nav .overlay-content a:focus {
+  	background: linear-gradient(to right, rgba(255,0,0, 0.1) 0%, rgba(255,255,255, 0.5) 100%);
+  	border-radius: 2px;
+  	transition: 500ms;
+  }
+}

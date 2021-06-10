@@ -1,0 +1,17 @@
+.main__content-section {
+	margin-bottom:10rem;
+	padding-top: 8.5rem;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+  padding-bottom: 0rem;
+	overflow: scroll;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.main__content-section > h2, .main__content-section > h3{
+	width: 100%;
+	margin-bottom:1.5rem;
+	padding-left: 0.5rem;
+	border-bottom: 1px solid #efefef;
+}

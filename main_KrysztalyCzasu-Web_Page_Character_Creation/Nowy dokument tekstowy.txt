@@ -1,0 +1,2633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>KRYSZTAŁY CZASU - Tworzenie Nowego Bohatera</title>
+    
+	<!--
+		<link href="css/main.css" rel="stylesheet" type="text/css">
+		<link href="css/links-list.css" rel="stylesheet" type="text/css">
+		<link href="css/scrollbar.css" rel="stylesheet" type="text/css">
+		<link href="css/main__content-header.css" rel="stylesheet" type="text/css">
+		<link href="css/main__content-section.css" rel="stylesheet" type="text/css">
+		<link href="css/main__content-subsection.css" rel="stylesheet" type="text/css">
+		<link href="css/collapsible-section.css" rel="stylesheet" type="text/css">
+		<link href="css/cards__item.css" rel="stylesheet" type="text/css">
+		<link href="css/menu.css" rel="stylesheet" type="text/css">
+	-->	
+
+		
+		<link href="build/styles.css" rel="stylesheet" type="text/css">
+		<link href="build/kc_styles.css" rel="stylesheet" type="text/css">
+		<link href="css/kc_professions.css" rel="stylesheet" type="text/css">
+		<link href="css/kc_checkbox.css" rel="stylesheet" type="text/css">
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+</style>
+
+</head>
+
+<body>
+	<main class="main" role="main">
+	
+		<!-- The overlay nav -->
+		<nav class="section--nav menu--container">
+			<!-- Use any element to open/show the overlay navigation menu -->
+		<button id="openbtn" class="openbtn menu__button__openbtn" aria-expanded="true" aria-haspopup="true" aria-controls="menu-list" title="open"><span>&#9776;</span></button>
+
+			<div id="section--nav__overlay" class="section--nav__overlay  menu" role="menu">
+			<!-- close button is an element of the overlay navigation menu -->
+				<button id="closebtn" class="closebtn menu__button__closebtn" title="close"><span>&times;</span></button>
+				<div class="overlay-content">
+					<ol class="menu__ordered-list">
+						
+							<ul class="menu__unordered-list">
+								<li role="menuitem" class="menu__item"><a href="#section1"class="menu__link">I. WYBÓR RASY I PŁCI</a></li>
+								<li role="menuitem" class="menu__item"><a href="#section2" class="menu__link">II. LOSOWANIE POCHODZENIA</a>
+									<ul class="menu__unordered-list">
+										<li role="menuitem" class="menu__item"><a href="#section2__place_of_birth" class="menu__link">Losowanie miejsca urodzenia</a></li>
+										<li role="menuitem" class="menu__item"><a href="#section2__social_class" class="menu__link">Losowanie pochodzenia społecznego</a></li>
+									</ul>
+								</li>
+								<li role="menuitem" class="menu__item"><a href="#section3" class="menu__link">III. LOSOWANIE UŁOMNOŚCI I ZDLONOŚCI NADNATURALNYCH</a></li>
+								<li role="menuitem" class="menu__item"><a href="#section4" class="menu__link">IV. WYBÓR PROFESJI</a>
+									<ul class="menu__unordered-list">
+										<li role="menuitem" class="menu__item"><a href="#profession_cast1" class="menu__link">Kasta żołnierska</a></li>
+										<li role="menuitem" class="menu__item"><a href="#profession_cast2" class="menu__link">Kasta rycerska</a></li>
+										<li role="menuitem" class="menu__item"><a href="#profession_cast3" class="menu__link">Kasta złodziejska</a></li>
+										<li role="menuitem" class="menu__item"><a href="#profession_cast4" class="menu__link">Kasta kleryczna</a></li>
+										<li role="menuitem" class="menu__item"><a href="#profession_cast5" class="menu__link">Kasta czarodziejska</a></li>
+									</ul>
+								</li>
+								<li role="menuitem" class="menu__item"><a href="#section5" class="menu__link">V. LOSOWANIE WZROSTU I WAGI</a></li>
+								<li role="menuitem" class="menu__item"><a href="#endpoints--blank-section-4" class="menu__link">...blank subsection 4</a></li>
+								<li role="menuitem" class="menu__item"><a href="#endpoints--blank-section-5" class="menu__link">...blank subsection 5</a></li>
+								<li role="menuitem" class="menu__item"><a href="#endpoints--blank-section-6" class="menu__link">...blank subsection 6</a></li>
+							</ul>
+						</li>
+					<li role="menuitem" class="menu__item"><a href="#links" class="menu__link">Links</a></li>
+					</ol>
+				</div>
+			</div>
+		</nav>
+
+		<div class="main__container">
+			<header id="header" class="main__content-header__sticky">
+				<img id="kc_logo" src="images/kc_logo.JPG" alt="">
+			</header>
+
+		<div class="main__container__sections">
+
+			<section id="endpoints" class="main__content-section endpoints">
+				<section id="section1" class="main__content-subsection">
+					<h3 class="stylized">I. WYBÓR RASY I PŁCI</h3>
+
+					<div class="gender">
+						<input type="checkbox" id="plec1" name="plec1" value="Mężczyzna" class="checkbox__gender">
+						<label for="plec1">Mężczyzna</label>
+						<input type="checkbox" id="plec2" name="plec2" value="Kobieta" class="checkbox__gender">
+						<label for="plec1">Kobieta</label>
+					</div>
+
+					<div class="race">
+
+						<div id="div_race1" class="race1 checkbox_container">
+							<input type="checkbox" id="race1" name="race1" value="Ludzie" class=checkbox__race>
+							<label for="race1">Ludzie</label>
+							<p>
+								- +5 pkt. do biegłości w mieczach, lancach, kopiach, kuszach, włóczniach i rapierach;<br>
+								- samouzdrowienie (czyli automatyczne odzyskiwanie punktów Wytrzymałości utraconych w wyniku odniesionych obrażeń) 2 pkt. obrażeń po każdych 8 godzinach wypoczynku;
+							</p>
+						</div><br>
+
+						<div id="div_race2" class="race2 checkbox_container">
+							<input type="checkbox" id="race2" name="race2" value="Połelfy" class=checkbox__race>
+							<label for="race2">Półelfy</label>
+							<p>
+								- 10 pkt. do biegłości w mieczach oraz 5 pkt. w łukach. włóczniach i lancach;<br>
+								- infrawizja (zdolność widzenia w naturalnych ciemnościach) o zasięgu równym 1/10 SZ (metrów);<br>
+								- samouzdrowienie 1 pkt. obrażeń po 8 godzinach wypoczynku;
+							</p>
+						</div><br>	
+
+						<div id="div_race3" class="race3 checkbox_container">
+							<input type="checkbox" id="race3" name="race3" value="Elfy" class=checkbox__race>
+							<label for="race3">Elfy</label>
+							<p>
+								- 10 pkt. do biegłości w mieczach i łukach (z wyjątkiem refleksyjnych) oraz 5 pkt. we włóczniach i sztyletach;<br>
+								- dwukrotnie większy niż wynikający ze współczynników zasięg słuchu i wzroku;<br>
+								- samouzdrowienie 1 pkt. obrażeń po 8 godzinach wypoczynku;
+							</p>
+						</div><br>
+
+						<div id="div_race4" class="race4 checkbox_container">
+							<input type="checkbox" id="race4" name="race4" value="Półolbrzymy" class=checkbox__race>
+							<label for="race4">Półolbrzymy</label>
+								<p>
+									- 5 pkt. do biegłości w kamieniach, maczugach, pałach, młotach oraz w walce na pięści;<br>
+									- dodatkowa Obrona 5 pkt. i Wyparowania 20 pkt., wynikające z grubości skóry  
+									(wszelkich obrażeń odniesionych w wyniku każdego rodzaju ataku - kłutego, tnącego lub obuchowego);<br>
+								- samouzdrowienie 4 pkt. obrażeń po 8 godzinach wypoczynku;</p>
+						</div><br>
+
+						<div id="div_race5" class="race5 checkbox_container">
+							<input type="checkbox" id="race5" name="race5" value="Polorki" class=checkbox__race>
+							<label for="race4">Półorki</label>
+							<p>
+								- 10 pkt. do biegłości w szabiach, łukach refleksyjnych oraz 5 pkt. w nożach;<br>
+								- infrawizja (1/10 SZ);<br>
+								- samouzdrowienie 2 pkt. obrażeń po 8 godzinach wypoczynku;
+							</p>
+								
+						</div><br>
+
+						<div id="div_race6" class="race6 checkbox_container">
+							<input type="checkbox" id="race6" name="race6" value="Krasnoludy" class=checkbox__race>
+							<label for="race6">Krasnoludy</label></h1>
+							<p>
+								- 10 pkt. do biegłości w toporach oraz 5 pkt. w kuszach, młotach, oskardach i sztyletach;<br>
+								- infrawizja (2/10 SZ);<br>
+								- dodatkowa Obrona 5 pkt. i Wyparowania 20 pkt.;<br>
+								- samouzdrowienie 3 pkt. obrażeń po 8 godzinach wypoczynku;
+							</p>
+						</div><br>
+
+						<div id="div_race7" class="race7 checkbox_container">
+							<input type="checkbox" id="race7" name="race7" value="Gnomy" class=checkbox__race>
+							<label for="race7">Gnomy</label></h1>
+							<p>
+								- 10 pkt. do biegłości w młotach i toporach oraz 5 pkt. w krótkich mieczach;<br>
+								- infrawizja (2/10 SZ); <br>
+								- dodatkowa Obrona 2pkt. i Wyparowania 10 pkt.;<br>
+								- samouzdrowienie 3 pkt. obrażeń po 8 godzinach wypoczynku;
+							</p>
+						</div><br>
+
+						<div id="div_race8" class="race8 checkbox_container">
+							<input type="checkbox" id="race8" name="race8" value="Hobbici" class=checkbox__race>
+							<label for="race8">Hobbici</label></h1>
+							<p>
+								- 10 pkt. do biegłości w kamieniach oraz 5 pkt. w krótkich łukach, sztyletach i krótkich mieczach;<br>
+								- dodatkowa Obrona 5 pkt. i Wyparowania 20 pkt.;<br>
+								- samouzdrowienie 3 pkt. obrażeń po 8 godzinach wypoczynku;
+							</p>
+						</div><br>
+
+						<div id="div_race9" class="race9 checkbox_container">
+							<input type="checkbox" id="race9" name="race9" value="Reptilioni" class=checkbox__race>
+							<label for="race9">Reptilioni</label></h1>
+							<p>
+								- 10 pkt. do biegłości w toporomieczach i w ataku pazurami oraz 5 pkt. w mieczach i kuszach;<br>
+								- nie mogą nosić smoczych skór i zbroi o ograniczeniach większych niż 1/2 ZR, 1/2 SZ; <br>
+								- dodatkowa Obrona 20 pkt. i Wyparowania 60 pki.;<br>
+								- samouzdrowienie 5 pkt. obrażeń po 8 godzinach wypoczynku;
+							</p>
+						</div><br>
+					</div>
+				</section>
+			</section>
+
+
+
+
+				<section id="section2" class="main__content-subsection endpoints--cards-cities-overview">
+
+					<h3 class="stylized">II. LSOWANIE POCHODZENIA</h3>
+					<section id="section2__place_of_birth" class="section2__place_of_birth">
+						<h3>Losowanie miejsca urodzenia</h3>
+						<p>IIa. Tabela MIEJSCE URODZENIA</p>
+						<table id ="table1_origin_place_of_birth"class="table_origin">
+							<tr id="table1_tr1">
+								<td class="td__k100">01-16</td>
+								<td><b>Ostrogar</b> — stolica Archipelagu Centralnego i orków; ok.
+									153 tys. mieszkańców — orki, półorki, ludzie, półolbrzymy,
+									półelfy, elfy, gnomy, krasnoludy, hobbici;</td>
+							</tr>
+							<tr id="table1_tr2">
+								<td class="td__k100">17-25</td>
+								<td><b>Get-warr-gar</b> — miasto portowe i stolica kupiectwa; ok.72
+									tys. mieszkańców — ludzie, półorki, orki, półelfy, elfy, kras-
+									noludy, gnomy, hobbici, reptilioni;</td>
+							</tr>
+							<tr id="table1_tr3">
+								<td class="td__k100">26-30</td>
+								<td><b>Ranhar-gar</b> — ok.44 tys. mieszkanców — elfy, półelfy, pół-
+									orki, orki, ludzie, gnomy, hobbici;</td>					
+							</tr>
+							<tr id="table1_tr4">
+								<td class="td__k100">31-34</td>
+								<td><b>Ora-gar</b> — stolica półolbrzymów, miasto portowe; ok. 34
+									tys. mieszkanców — półolbrzymy, olbrzymy, orki, półorki,
+									krasnoludy, reptilioni;</td>
+							</tr>
+							<tr id="table1_tr5">
+								<td class="td__k100">35-38</td>
+								<td><b>Gasta</b> — stolica repiillionów, miasto — twierdza; około 34
+									tys. mieszkańców — reptillioni, krasnoludy, hobbici, gnomy
+									i ludzie;</td>
+							</tr>
+							<tr id="table1_tr6">
+								<td class="td__k100">39-42</td>
+								<td><b>Olgrion</b> — stolica eltów; ok. 31 tys. mieszkańców — elfy,
+									półelfy;</td>
+							</tr>
+							<tr id="table1_tr7">
+								<td class="td__k100">43-45</td>
+								<td><b>Tagara Ciemna</b> — jedna ze stolic ludzkich; ok. 29 tys.
+									mieszkańców — ludzie;</td>
+							</tr>
+							<tr id="table1_tr8">
+								<td class="td__k100">46-48</td>
+								<td><b>Ongir-gar</b> — miasto portowe; ok. 24 tys. mieszkanców —
+									elfy, półelfy, ludzie, półorki, orki;</td>
+							</tr>
+							<tr id="table1_tr9">
+								<td class="td__k100">49-51</td>
+								<td><b>Aria-gar</b> — ok. 22 tys. mieszkańców — orki, półorki, ludzie,
+									hobbici, gnomy, reptilioni;</td>
+							</tr>
+							<tr id="table1_tr10">
+								<td class="td__k100">52-54</td>
+								<td><b>Inchra-gar</b> — ok. 21 tys. mieszkańców — orki, półorki,
+									ludzie;</td>
+							</tr>
+							<tr id="table1_tr11">
+								<td class="td__k100">55-56</td>
+								<td><b>Tagara Szara</b> — jedna ze stolic ludzkich; ok. 19 tys.
+									mieszkańców — ludzie;</td>
+							</tr>
+							<tr id="table1_tr12">
+								<td class="td__k100">57-58</td>
+								<td><b>Tagara Biała</b> — jedna ze stolic ludzkich; ok. 15,5 tys.
+									mieszkańców — ludzie, krasnoludy;</td>
+							</tr>
+							<tr id="table1_tr13">
+								<td class="td__k100">59-60</td>
+								<td><b>Ogragar</b> — stolica ogrów, miasto portowe; ok. 13 tys.
+									mieszkańców — ogry, półorki, orki, krasnoludy;</td>
+							</tr>
+							<tr id="table1_tr14">
+								<td class="td__k100">61-80</td>
+								<td><b>rejony Orcusa oddalone od miast</b>; wiejskie, ew.
+									samotne posiadłości;</td>
+							</tr>
+							<tr id="table1_tr15">
+								<td class="td__k100">81-99</td>
+								<td><b>wyspy, leżące wokół Orcusa</b>;</td>
+							</tr>
+							<tr id="table1_tr16">
+								<td class="td__k100">00</td>
+								<td><b>miejsce urodzenia nieznane</b> (postać może pochodzić
+									np. z innego archipelagu, lub też po prostu nie wiedzieć
+									gdzie się urodziła);</td>
+							</tr>
+						</table>
+
+						<button id="k100_button_place_of_birth" class="k100_button">k100</button>: <span id="result1"></span>
+						<div>
+							<div>
+								miejsce urodzenia: 
+								<span id="place_of_birth"></span>
+							</div>
+							<img id="map" src="images/map0.jpg" alt="" style="width: 80%; height: 78%;">
+						</div>
+					</section>
+
+					<section id="section2__social_class" class="section2__social_class">
+						<h3 >Losowanie pochodzenia społecznego</h3>
+						<p>IIb. Tabela WYJŚCIOWA KLASA SPOŁECZNA</p>
+						
+						
+							
+						<h3 style="margin-left: 8px;">BIEDOTA</h3> <span> (chłopstwo)</span>
+						<table id ="table2_origin_social-class" class="table_origin">
+							<tr id="table2_row1">
+								<td class="td__k100">01-05</td>
+								<td><b>NIŻSZA KLASA NIŻSZA (NKN)</b> — niższa biedota (ubogie
+									chłopstwo); roczny dochód 1k10 sztuk złota; Charyzma
+									-15 pkt.;</td>
+							</tr>
+							<tr id="table2_row2">
+								<td class="td__k100">06-10</td>
+								<td><b>ŚREDNIA KLASA NIŻSZA (ŚKN)</b>  — średnia biedota
+									(typowe chłopstwo); roczny dochód 2k10 sztuk złota;
+									Charyzma -10 pkt.;</td>
+							</tr>
+							<tr id="table2_row3">
+								<td class="td__k100">11-15</td>
+								<td><b>WYŻSZA KLASA NIŻSZA (WKN)</b> — wyższa biedota
+									 (bogate chłopstwo); roczny dochód 5k10 szt. złota; Charyzma -5 pkt.; umie czytać;</td>					
+							</tr>
+						</table>
+
+						<h3 style="margin-left: 8px;">MIESZCZAŃSTWO</h3> <span> (ma prawo używać tytułu EL przed imieniem)</span>
+						<table class="table_origin">
+							<tr id="table2_row4">
+								<td class="td__k100">16-35</td>
+								<td><b>NIŻSZA KLASA ŚREDNIA (NKŚ)</b> — ubogie mieszczaństwo; roczny dochód k50 złt; umie czytać i pisać;</td>
+							</tr>
+							<tr id="table2_row5">
+								<td class="td__k100">36-55</td>
+								<td><b>ŚREDNIA KLASA ŚREDNIA (ŚKŚ)</b>  — średnie mieszczaństwo; roczny dochód k100 złt; umie czytać i pisać;</td>
+							</tr>
+							<tr id="table2_row6">
+								<td class="td__k100">56-75</td>
+								<td><b>WYŻSZA KLASA ŚREDNIA (WKŚ)</b> — bogate mieszczaństwo; roczny dochód 2k100 złt; umie czytać i pisać;</td>					
+							</tr>
+						</table>
+
+						<h3 style="margin-left: 8px;">SZLACHTA</h3> <span> (może używać tytułu TAN przed imieniem; tylko członkowie tej klasy społecznej mogą zostać rycerzami)</span>
+						<table class="table_origin">
+							<tr id="table2_row7">
+								<td class="td__k100">76-85</td>
+								<td><b>NIŻSZA KLASA WYŻSZA (NKW)</b> — uboga szlachta; roczny dochód k100 złt; umie czytać i pisać; CH +5 pkt.;</td>
+							</tr>
+							<tr id="table2_row8">
+								<td class="td__k100">86-90</td>
+								<td><b>ŚREDNIA KLASA WYŻSZA (ŚKW)</b> — średnia szlachta; roczny dochód 2k100 złt; umie czytać i pisać; CH +10;</td>
+							</tr>
+							<tr id="table2_row9">
+								<td class="td__k100">91-95</td>
+								<td><b>WYŻSZA KLASA WYŻSZA (WKW)</b> — arystokracja i bogata szlachta; roczny dochód 5k100 złt; umie czytać i pisać;</td>					
+							</tr>
+							<tr id="table2_row10">
+								<td class="td__k100">96-00</td>
+								<td><b>ELITA WŁADZY (EW)</b> — członek aktualnie rządzących
+									rodów książęcych (zamiast tan może używać tytułu
+									książę); roczny dochód 10k100 szt. złota; umie czytać i
+									pisać; ma prawo sprowadzania bardzo rzadkich broni;
+									ponadto wie, gdzie za odpowiednią ofiarą może zostać
+									wskrzeszony; CH +20 pkt.</td>					
+							</tr>
+						</table>
+						<button id="k100_button_social_class" class="k100_button">k100</button>: <span id="result2"></span>
+						<div>
+							<div>
+								wyjściowa klasa społeczna: 
+								<span id="social_class"></span>
+							</div>
+						</div>
+						<button id="k100_button_social_class_benefice"><span class="type_dice1">k100</span></button>: <span id="social_class_benefice_result">0</span>
+						<div>
+							<div>
+								roczny dochód: 
+								<span id="social_class_benefice">0</span> złt;
+							</div>
+						</div>
+					</section>
+				
+				
+				</section>
+
+
+				<section id="section3" class="main__content-subsection endpoints--blank-section">
+					<h3 class="stylized">III. LOSOWANIE UŁOMNOŚCI I ZDLONOŚCI NADNATURALNYCH</h3>
+					<h3>III.a Ułomności</h3>
+					<div id="tmpl1">
+					<p>
+						Czy postać ma ułomność (20% szansa)->
+						<button id="k100_button_section3_disabilities1" class="button_inline"><span class="type_dice2">k100</span></button>:
+						<span id="section3_disabilities_result1">0</span>
+						<div>
+							ułomność: 
+							<span id="section3_disabilitiesName1"> brak</span>;
+						</div>
+					</p>
+					</div>
+
+					<h3>III.b Zdolności nadnaturalne</h3>
+					<div id="tmpl2">
+						<p>
+							Czy postać ma zdolność nadnaturalną (10% szansa)->
+							<button id="k100_button_section3_abilities1" class="button_inline"><span class="type_dice2">k100</span></button>:
+							<span id="section3_abilities_result1">0</span>
+							<div>
+								zdolność nadnaturalna: 
+								<span id="section3_abilitiesName1">brak</span>;
+							</div>
+						</p>
+					</div>
+							
+				</section>
+
+				<section id="section4" class="main__content-subsection endpoints--blank-section">
+					<h3 class="stylized">IV. WZBÓR PROFESJI</h3>
+
+					<div class="multiple_class">
+						<input type="checkbox" id="secondClass" name="secondClass" value="Dwuklasowiec" class="checkbox__class">
+						<label for="secondClass">Dwie profesje</label>
+						<small style="margin-left: 100px;">(* - w wyjątkowych/uzasadnionych okolicznościach, za zgodą MG)</small>
+					</div>
+
+					<section id="profession_cast1" class="subprofession_cast">
+						<h3>Kasta żołnierska</h3>
+						<div id="div_profession1" class="subprofession_container checkbox_container profession1">
+							<input type="checkbox" id="profession1" name="profession1" value="Wojownik" class="checkbox__profession">
+							<label for="profession1">WOJOWNIK</label>
+						
+							<p>
+								- 10 pkt. do biegłości w mieczach oraz 5 pkt. w łukach. włóczniach i lancach;<br>
+								- infrawizja (zdolność widzenia w naturalnych ciemnościach) o zasięgu równym 1/10 SZ (metrów);<br>
+								- samouzdrowienie 1 pkt. obrażeń po 8 godzinach wypoczynku;
+							</p>
+							
+							<div id ="profession_container__subelement-profession1" class="subprofession_container__subelement">
+								<div hidden class="subprofession_container">
+									<div hidden class="subprofession1">
+										<input type="checkbox" id="subprofession1_1" name="subprofession1" value="Wojownik" class="checkbox__subprofession">
+										<label for="subprofession1">Wojownik</label>
+									</div>
+									<div hidden class="subprofession2">
+										<input type="checkbox" id="subprofession2_1" name="subprofession2" value="Łowca" class="checkbox__subprofession">
+										<label for="subprofession2">Łowca</label>
+									</div>
+									<div hidden class="subprofession3">
+										<input type="checkbox" id="subprofession3_1" name="subprofession3" value="Gwardzista" class="checkbox__subprofession">
+										<label for="subprofession3">Gwardzista</label>
+									</div>
+									<div hidden class="subprofession4">
+										<input type="checkbox" id="subprofession4_1" name="subprofession4" value="Barbarzyńca" class="checkbox__subprofession">
+										<label for="subprofession4">Barbarzyńca</label>
+									</div>	
+								</div>
+
+								<div hidden class="subprofession_container cast2">
+									<div hidden class="subprofession5">
+										<input type="checkbox" id="subprofession5_1" name="subprofession5" value="Rycerz" class="checkbox__subprofession">
+										<label for="subprofession5">Rycerz</label>
+									</div>
+									<div hidden class="subprofession6">
+										<input type="checkbox" id="subprofession6_1" name="subprofession6" value="Paladyn" class="checkbox__subprofession">
+										<label for="subprofession6">Paladyn</label>
+									</div>
+									<div hidden class="subprofession7">
+										<input type="checkbox" id="subprofession7_1" name="subprofession7" value="Czarny Rycerz" class="checkbox__subprofession">
+										<label for="subprofession7">Czarny Rycerz</label>
+									</div>					
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession8">
+										<input type="checkbox" id="subprofession8_1" name="subprofession8" value="Złodziej" class="checkbox__subprofession">
+										<label for="subprofession8">Złodziej</label>
+									</div>
+									<div class="subprofession9">
+										<input type="checkbox" id="subprofession9_1" name="subprofession9" value="Zabójca" class="checkbox__subprofession">
+										<label for="subprofession9">Zabójca</label>
+									</div>
+									<div class="subprofession10">
+										<input type="checkbox" id="subprofession10_1" name="subprofession10" value="Kupiec" class="checkbox__subprofession">
+										<label for="subprofession10">Kupiec</label>
+									</div>
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession11">
+										<input type="checkbox" id="subprofession11_1" name="subprofession11" value="Kapłan" class="checkbox__subprofession">
+										<label for="subprofession11">Kapłan</label>
+									</div>
+									<div class="subprofession12">
+										<input type="checkbox" id="subprofession12_1" name="subprofession12" value="Driud" class="checkbox__subprofession">
+										<label for="subprofession12">Driud</label>
+									</div>	
+									<div class="subprofession13">
+										<input type="checkbox" id="subprofession13_1" name="subprofession13" value="Astrolog" class="checkbox__subprofession">
+										<label for="subprofession13">Astrolog</label>
+									</div>
+									<div hidden class="subprofession14">
+										<input type="checkbox" id="subprofession14_1" name="subprofession14" value="Półbóg" class="checkbox__subprofession">
+										<label for="subprofession14">Półbóg</label>
+									</div>
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession15">
+										<input type="checkbox" id="subprofession15_1" name="subprofession15" value="Mag" class="checkbox__subprofession">
+										<label for="subprofession15">Mag</label>
+									</div>
+									<div class="subprofession16">
+										<input type="checkbox" id="subprofession16_1" name="subprofession16" value="Czarnoksiężnik" class="checkbox__subprofession">
+										<label for="subprofession16">Czarnoksiężnik</label>
+									</div>	
+									<div class="subprofession17">
+										<input type="checkbox" id="subprofession17_1" name="subprofession17" value="Iluzjonista" class="checkbox__subprofession">
+										<label for="subprofession17">Iluzjonista</label>
+									</div>
+									<div class="subprofession18">
+										<input type="checkbox" id="subprofession18_1" name="subprofession18" value="Alchemik" class="checkbox__subprofession">
+										<label for="subprofession18">Alchemik</label>
+									</div>
+								</div>
+							</div>
+						</div><br>
+
+						<div id="div_profession2" class="subprofession_container checkbox_container profession2">
+							<input type="checkbox" id="profession2" name="profession2" value="Łowca" class="checkbox__profession">
+							<label for="profession2">ŁOWCA</label>
+							
+							<p>
+								- 10 pkt. do biegłości w mieczach oraz 5 pkt. w łukach. włóczniach i lancach;<br>
+								- infrawizja (zdolność widzenia w naturalnych ciemnościach) o zasięgu równym 1/10 SZ (metrów);<br>
+								- samouzdrowienie 1 pkt. obrażeń po 8 godzinach wypoczynku;
+							</p>
+
+							<div id ="profession_container__subelement-profession2" class="subprofession_container__subelement profession_container__subelement_hidden">
+								<div hidden class="subprofession_container">
+									<div hidden class="subprofession1">
+										<input type="checkbox" id="subprofession1_2" name="subprofession1" value="Wojownik" class="checkbox__subprofession">
+										<label for="subprofession1">Wojownik</label>
+									</div>
+									<div hidden class="subprofession2">
+										<input type="checkbox" id="subprofession2_2" name="subprofession2" value="Łowca" class="checkbox__subprofession">
+										<label for="subprofession2">Łowca</label>
+									</div>
+									<div hidden class="subprofession3">
+										<input type="checkbox" id="subprofession3_2" name="subprofession3" value="Gwardzista" class="checkbox__subprofession">
+										<label for="subprofession3">Gwardzista</label>
+									</div>
+									<div hidden class="subprofession4">
+										<input type="checkbox" id="subprofession4_2" name="subprofession4" value="Barbarzyńca" class="checkbox__subprofession">
+										<label for="subprofession4">Barbarzyńca</label>
+									</div>	
+								</div>
+
+								<div hidden class="subprofession_container cast2">
+									<div hidden class="subprofession5">
+										<input type="checkbox" id="subprofession5_2" name="subprofession5" value="Rycerz" class="checkbox__subprofession">
+										<label for="subprofession5">Rycerz</label>
+									</div>
+									<div hidden class="subprofession6">
+										<input type="checkbox" id="subprofession6_2" name="subprofession6" value="Paladyn" class="checkbox__subprofession">
+										<label for="subprofession6">Paladyn</label>
+									</div>
+									<div hidden class="subprofession7">
+										<input type="checkbox" id="subprofession7_2" name="subprofession7" value="Czarny Rycerz" class="checkbox__subprofession">
+										<label for="subprofession7">Czarny Rycerz</label>
+									</div>					
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession8">
+										<input type="checkbox" id="subprofession8_2" name="subprofession8" value="Złodziej" class="checkbox__subprofession">
+										<label for="subprofession8">*Złodziej</label>
+									</div>
+									<div class="subprofession9">
+										<input type="checkbox" id="subprofession9_2" name="subprofession9" value="Zabójca" class="checkbox__subprofession">
+										<label for="subprofession9">*Zabójca</label>
+									</div>
+									<div class="subprofession10">
+										<input type="checkbox" id="subprofession10_2" name="subprofession10" value="Kupiec" class="checkbox__subprofession">
+										<label for="subprofession10">Kupiec</label>
+									</div>
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession11">
+										<input type="checkbox" id="subprofession11_2" name="subprofession11" value="Kapłan" class="checkbox__subprofession">
+										<label for="subprofession11">Kapłan</label>
+									</div>
+									<div class="subprofession12">
+										<input type="checkbox" id="subprofession12_2" name="subprofession12" value="Driud" class="checkbox__subprofession">
+										<label for="subprofession12">Driud</label>
+									</div>	
+									<div class="subprofession13">
+										<input type="checkbox" id="subprofession13_2" name="subprofession13" value="Astrolog" class="checkbox__subprofession">
+										<label for="subprofession13">*Astrolog</label>
+									</div>
+									<div hidden class="subprofession14">
+										<input type="checkbox" id="subprofession14_2" name="subprofession14" value="Półbóg" class="checkbox__subprofession">
+										<label for="subprofession14">Półbóg</label>
+									</div>
+								</div>
+
+								<div class="subprofession_container">
+									<div hidden class="subprofession15">
+										<input type="checkbox" id="subprofession15_2" name="subprofession15" value="Mag" class="checkbox__subprofession">
+										<label for="subprofession15">Mag</label>
+									</div>
+									<div class="subprofession16">
+										<input type="checkbox" id="subprofession16_2" name="subprofession16" value="Czarnoksiężnik" class="checkbox__subprofession">
+										<label for="subprofession16">*Czarnoksiężnik</label>
+									</div>	
+									<div class="subprofession17">
+										<input type="checkbox" id="subprofession17_2" name="subprofession17" value="Iluzjonista" class="checkbox__subprofession">
+										<label for="subprofession17">*Iluzjonista</label>
+									</div>
+									<div class="subprofession18">
+										<input type="checkbox" id="subprofession18_2" name="subprofession18" value="Alchemik" class="checkbox__subprofession">
+										<label for="subprofession18">*Alchemik</label>
+									</div>
+								</div>
+							</div>
+						</div><br>
+
+						<div id="div_profession3" class="subprofession_container checkbox_container profession3">
+							<input type="checkbox" id="profession3" name="profession3" value="Gwardzista" class="checkbox__profession">
+							<label for="profession3">GWARDZISTA</label>
+							
+							<p>
+								- 10 pkt. do biegłości w mieczach oraz 5 pkt. w łukach. włóczniach i lancach;<br>
+								- infrawizja (zdolność widzenia w naturalnych ciemnościach) o zasięgu równym 1/10 SZ (metrów);<br>
+								- samouzdrowienie 1 pkt. obrażeń po 8 godzinach wypoczynku;
+							</p>
+
+							<div id ="profession_container__subelement-profession3" class="subprofession_container__subelement profession_container__subelement_hidden">
+								<div hidden class="subprofession_container">
+									<div hidden class="subprofession1">
+										<input type="checkbox" id="subprofession1_3" name="subprofession1" value="Wojownik" class="checkbox__subprofession">
+										<label for="subprofession1">Wojownik</label>
+									</div>
+									<div hidden class="subprofession2">
+										<input type="checkbox" id="subprofession2_3" name="subprofession2" value="Łowca" class="checkbox__subprofession">
+										<label for="subprofession2">Łowca</label>
+									</div>
+									<div hidden class="subprofession3">
+										<input type="checkbox" id="subprofession3_3" name="subprofession3" value="Gwardzista" class="checkbox__subprofession">
+										<label for="subprofession3">Gwardzista</label>
+									</div>
+									<div hidden class="subprofession4">
+										<input type="checkbox" id="subprofession4_3" name="subprofession4" value="Barbarzyńca" class="checkbox__subprofession">
+										<label for="subprofession4">Barbarzyńca</label>
+									</div>	
+								</div>
+
+								<div hidden class="subprofession_container cast2">
+									<div hidden class="subprofession5">
+										<input type="checkbox" id="subprofession5_3" name="subprofession5" value="Rycerz" class="checkbox__subprofession">
+										<label for="subprofession5">Rycerz</label>
+									</div>
+									<div hidden class="subprofession6">
+										<input type="checkbox" id="subprofession6_3" name="subprofession6" value="Paladyn" class="checkbox__subprofession">
+										<label for="subprofession6">Paladyn</label>
+									</div>
+									<div hidden class="subprofession7">
+										<input type="checkbox" id="subprofession7_3" name="subprofession7" value="Czarny Rycerz" class="checkbox__subprofession">
+										<label for="subprofession7">Czarny Rycerz</label>
+									</div>					
+								</div>
+
+								<div class="subprofession_container">
+									<div hidden class="subprofession8">
+										<input type="checkbox" id="subprofession8_3" name="subprofession8" value="Złodziej" class="checkbox__subprofession">
+										<label for="subprofession8">Złodziej</label>
+									</div>
+									<div class="subprofession9">
+										<input type="checkbox" id="subprofession9_3" name="subprofession9" value="Zabójca" class="checkbox__subprofession">
+										<label for="subprofession9">Zabójca</label>
+									</div>
+									<div class="subprofession10">
+										<input type="checkbox" id="subprofession10_3" name="subprofession10" value="Kupiec" class="checkbox__subprofession">
+										<label for="subprofession10">*Kupiec</label>
+									</div>
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession11">
+										<input type="checkbox" id="subprofession11_3" name="subprofession11" value="Kapłan" class="checkbox__subprofession">
+										<label for="subprofession11">Kapłan</label>
+									</div>
+									<div hidden class="subprofession12">
+										<input type="checkbox" id="subprofession12_3" name="subprofession12" value="Driud" class="checkbox__subprofession">
+										<label for="subprofession12">Driud</label>
+									</div>	
+									<div class="subprofession13">
+										<input type="checkbox" id="subprofession13_3" name="subprofession13" value="Astrolog" class="checkbox__subprofession">
+										<label for="subprofession13">*Astrolog</label>
+									</div>
+									<div hidden class="subprofession14">
+										<input type="checkbox" id="subprofession14_3" name="subprofession14" value="Półbóg" class="checkbox__subprofession">
+										<label for="subprofession14">Półbóg</label>
+									</div>
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession15">
+										<input type="checkbox" id="subprofession15_3" name="subprofession15" value="Mag" class="checkbox__subprofession">
+										<label for="subprofession15">*Mag</label>
+									</div>
+									<div class="subprofession16">
+										<input type="checkbox" id="subprofession16_3" name="subprofession16" value="Czarnoksiężnik" class="checkbox__subprofession">
+										<label for="subprofession16">*Czarnoksiężnik</label>
+									</div>	
+									<div class="subprofession17">
+										<input type="checkbox" id="subprofession17_3" name="subprofession17" value="Iluzjonista" class="checkbox__subprofession">
+										<label for="subprofession17">*Iluzjonista</label>
+									</div>
+									<div class="subprofession18">
+										<input type="checkbox" id="subprofession18_3" name="subprofession18" value="Alchemik" class="checkbox__subprofession">
+										<label for="subprofession18">*Alchemik</label>
+									</div>
+								</div>
+							</div>
+						</div><br>
+
+						<div id="div_profession4" class="subprofession_container checkbox_container profession4">
+							<input type="checkbox" id="profession4" name="profession4" value="Barbarzyńca" class="checkbox__profession">
+							<label for="profession4">BARBARZYŃCA</label>
+							
+							<p>
+								- 10 pkt. do biegłości w mieczach oraz 5 pkt. w łukach. włóczniach i lancach;<br>
+								- infrawizja (zdolność widzenia w naturalnych ciemnościach) o zasięgu równym 1/10 SZ (metrów);<br>
+								- samouzdrowienie 1 pkt. obrażeń po 8 godzinach wypoczynku;
+							</p>
+
+							<div id ="profession_container__subelement-profession4" class="subprofession_container__subelement profession_container__subelement_hidden">
+								<div hidden class="subprofession_container">
+									<div hidden class="subprofession1">
+										<input type="checkbox" id="subprofession1_4" name="subprofession1" value="Wojownik" class="checkbox__subprofession">
+										<label for="subprofession1">Wojownik</label>
+									</div>
+									<div hidden class="subprofession2">
+										<input type="checkbox" id="subprofession2_4" name="subprofession2" value="Łowca" class="checkbox__subprofession">
+										<label for="subprofession2">Łowca</label>
+									</div>
+									<div hidden class="subprofession3">
+										<input type="checkbox" id="subprofession3_4" name="subprofession3" value="Gwardzista" class="checkbox__subprofession">
+										<label for="subprofession3">Gwardzista</label>
+									</div>
+									<div hidden class="subprofession4">
+										<input type="checkbox" id="subprofession4_4" name="subprofession4" value="Barbarzyńca" class="checkbox__subprofession">
+										<label for="subprofession4">Barbarzyńca</label>
+									</div>	
+								</div>
+
+								<div hidden class="subprofession_container cast2">
+									<div hidden class="subprofession5">
+										<input type="checkbox" id="subprofession5_4" name="subprofession5" value="Rycerz" class="checkbox__subprofession">
+										<label for="subprofession5">Rycerz</label>
+									</div>
+									<div hidden class="subprofession6">
+										<input type="checkbox" id="subprofession6_4" name="subprofession6" value="Paladyn" class="checkbox__subprofession">
+										<label for="subprofession6">Paladyn</label>
+									</div>
+									<div hidden class="subprofession7">
+										<input type="checkbox" id="subprofession7_4" name="subprofession7" value="Czarny Rycerz" class="checkbox__subprofession">
+										<label for="subprofession7">Czarny Rycerz</label>
+									</div>					
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession8">
+										<input type="checkbox" id="subprofession8_4" name="subprofession8" value="Złodziej" class="checkbox__subprofession">
+										<label for="subprofession8">Złodziej</label>
+									</div>
+									<div class="subprofession9">
+										<input type="checkbox" id="subprofession9_4" name="subprofession9" value="Zabójca" class="checkbox__subprofession">
+										<label for="subprofession9">Zabójca</label>
+									</div>
+									<div class="subprofession10">
+										<input type="checkbox" id="subprofession10_4" name="subprofession10" value="Kupiec" class="checkbox__subprofession">
+										<label for="subprofession10">Kupiec</label>
+									</div>
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession11">
+										<input type="checkbox" id="subprofession11_4" name="subprofession11" value="Kapłan" class="checkbox__subprofession">
+										<label for="subprofession11">Kapłan</label>
+									</div>
+									<div class="subprofession12">
+										<input type="checkbox" id="subprofession12_4" name="subprofession12" value="Driud" class="checkbox__subprofession">
+										<label for="subprofession12">*Driud</label>
+									</div>	
+									<div hidden class="subprofession13">
+										<input type="checkbox" id="subprofession13_4" name="subprofession13" value="Astrolog" class="checkbox__subprofession">
+										<label for="subprofession13">Astrolog</label>
+									</div>
+									<div hidden class="subprofession14">
+										<input type="checkbox" id="subprofession14_4" name="subprofession14" value="Półbóg" class="checkbox__subprofession">
+										<label for="subprofession14">Półbóg</label>
+									</div>
+								</div>
+
+								<div hidden class="subprofession_container">
+									<div hidden class="subprofession15">
+										<input type="checkbox" id="subprofession15_4" name="subprofession15" value="Mag" class="checkbox__subprofession">
+										<label for="subprofession15">Mag</label>
+									</div>
+									<div hidden class="subprofession16">
+										<input type="checkbox" id="subprofession16_4" name="subprofession16" value="Czarnoksiężnik" class="checkbox__subprofession">
+										<label for="subprofession16">Czarnoksiężnik</label>
+									</div>	
+									<div hidden class="subprofession17">
+										<input type="checkbox" id="subprofession17_4" name="subprofession17" value="Iluzjonista" class="checkbox__subprofession">
+										<label for="subprofession17">Iluzjonista</label>
+									</div>
+									<div hidden class="subprofession18">
+										<input type="checkbox" id="subprofession18_4" name="subprofession18" value="Alchemik" class="checkbox__subprofession">
+										<label for="subprofession18">Alchemik</label>
+									</div>
+								</div>
+							</div>
+						</div><br>
+					</section>
+
+					<section id="profession_cast2" class="subprofession_cast">
+						<h3>Kasta rycerska</h3>
+						<div id="div_profession5" class="subprofession_container checkbox_container profession5">
+							<input type="checkbox" id="profession5" name="profession5" value="Rycerz" class="checkbox__profession">
+							<label for="profession5">RYCERZ</label>
+							
+							<p>
+								- 10 pkt. do biegłości w mieczach oraz 5 pkt. w łukach. włóczniach i lancach;<br>
+								- infrawizja (zdolność widzenia w naturalnych ciemnościach) o zasięgu równym 1/10 SZ (metrów);<br>
+								- samouzdrowienie 1 pkt. obrażeń po 8 godzinach wypoczynku;
+							</p>
+
+							<div id ="profession_container__subelement-profession5" class="subprofession_container__subelement profession_container__subelement_hidden">	
+								<div hidden class="subprofession_container">
+									<div hidden class="subprofession1">
+										<input type="checkbox" id="subprofession1_5" name="subprofession1" value="Wojownik" class="checkbox__subprofession">
+										<label for="subprofession1">Wojownik</label>
+									</div>
+									<div hidden class="subprofession2">
+										<input type="checkbox" id="subprofession2_5" name="subprofession2" value="Łowca" class="checkbox__subprofession">
+										<label for="subprofession2">Łowca</label>
+									</div>
+									<div hidden class="subprofession3">
+										<input type="checkbox" id="subprofession3_5" name="subprofession3" value="Gwardzista" class="checkbox__subprofession">
+										<label for="subprofession3">Gwardzista</label>
+									</div>
+									<div hidden class="subprofession4">
+										<input type="checkbox" id="subprofession4_5" name="subprofession4" value="Barbarzyńca" class="checkbox__subprofession">
+										<label for="subprofession4">Barbarzyńca</label>
+									</div>	
+								</div>
+
+								<div hidden class="subprofession_container cast2">
+									<div hidden class="subprofession5">
+										<input type="checkbox" id="subprofession5_5" name="subprofession5" value="Rycerz" class="checkbox__subprofession">
+										<label for="subprofession5">Rycerz</label>
+									</div>
+									<div hidden class="subprofession6">
+										<input type="checkbox" id="subprofession6_5" name="subprofession6" value="Paladyn" class="checkbox__subprofession">
+										<label for="subprofession6">Paladyn</label>
+									</div>
+									<div hidden class="subprofession7">
+										<input type="checkbox" id="subprofession7_5" name="subprofession7" value="Czarny Rycerz" class="checkbox__subprofession">
+										<label for="subprofession7">Czarny Rycerz</label>
+									</div>					
+								</div>
+
+								<div hidden class="subprofession_container">
+									<div hidden class="subprofession8">
+										<input type="checkbox" id="subprofession8_5" name="subprofession8" value="Złodziej" class="checkbox__subprofession">
+										<label for="subprofession8">Złodziej</label>
+									</div>
+									<div hidden class="subprofession9">
+										<input type="checkbox" id="subprofession9_5" name="subprofession9" value="Zabójca" class="checkbox__subprofession">
+										<label for="subprofession9">Zabójca</label>
+									</div>
+									<div hidden class="subprofession10">
+										<input type="checkbox" id="subprofession10_5" name="subprofession10" value="Kupiec" class="checkbox__subprofession">
+										<label for="subprofession10">Kupiec</label>
+									</div>
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession11">
+										<input type="checkbox" id="subprofession11_5" name="subprofession11" value="Kapłan" class="checkbox__subprofession">
+										<label for="subprofession11">Kapłan</label>
+									</div>
+									<div hidden class="subprofession12">
+										<input type="checkbox" id="subprofession12_5" name="subprofession12" value="Driud" class="checkbox__subprofession">
+										<label for="subprofession12">Driud</label>
+									</div>	
+									<div class="subprofession13">
+										<input type="checkbox" id="subprofession13_5" name="subprofession13" value="Astrolog" class="checkbox__subprofession">
+										<label for="subprofession13">*Astrolog</label>
+									</div>
+									<div hidden class="subprofession14">
+										<input type="checkbox" id="subprofession14_5" name="subprofession14" value="Półbóg" class="checkbox__subprofession">
+										<label for="subprofession14">Półbóg</label>
+									</div>
+								</div>
+
+								<div class="subprofession_container">
+									<div hidden class="subprofession15">
+										<input type="checkbox" id="subprofession15_5" name="subprofession15" value="Mag" class="checkbox__subprofession">
+										<label for="subprofession15">Mag</label>
+									</div>
+									<div class="subprofession16">
+										<input type="checkbox" id="subprofession16_5" name="subprofession16" value="Czarnoksiężnik" class="checkbox__subprofession">
+										<label for="subprofession16">*Czarnoksiężnik</label>
+									</div>	
+									<div hidden class="subprofession17">
+										<input type="checkbox" id="subprofession17_5" name="subprofession17" value="Iluzjonista" class="checkbox__subprofession">
+										<label for="subprofession17">Iluzjonista</label>
+									</div>
+									<div class="subprofession18">
+										<input type="checkbox" id="subprofession18_5" name="subprofession18" value="Alchemik" class="checkbox__subprofession">
+										<label for="subprofession18">*Alchemik</label>
+									</div>
+								</div>
+							</div>
+						</div><br>
+						
+						<div id="div_profession6" class="subprofession_container checkbox_container profession6">
+							<input type="checkbox" id="profession6" name="profession6" value="Paladyn" class="checkbox__profession">
+							<label for="profession6">PALADYN</label>
+							
+							<p>
+								- 10 pkt. do biegłości w mieczach oraz 5 pkt. w łukach. włóczniach i lancach;<br>
+								- infrawizja (zdolność widzenia w naturalnych ciemnościach) o zasięgu równym 1/10 SZ (metrów);<br>
+								- samouzdrowienie 1 pkt. obrażeń po 8 godzinach wypoczynku;
+							</p>
+
+							<div id ="profession_container__subelement-profession6" class="subprofession_container__subelement profession_container__subelement_hidden">
+								<div hidden class="subprofession_container">
+									<div hidden class="subprofession1">
+										<input type="checkbox" id="subprofession1_6" name="subprofession1" value="Wojownik" class="checkbox__subprofession">
+										<label for="subprofession1">Wojownik</label>
+									</div>
+									<div hidden class="subprofession2">
+										<input type="checkbox" id="subprofession2_6" name="subprofession2" value="Łowca" class="checkbox__subprofession">
+										<label for="subprofession2">Łowca</label>
+									</div>
+									<div hidden class="subprofession3">
+										<input type="checkbox" id="subprofession3_6" name="subprofession3" value="Gwardzista" class="checkbox__subprofession">
+										<label for="subprofession3">Gwardzista</label>
+									</div>
+									<div hidden class="subprofession4">
+										<input type="checkbox" id="subprofession4_6" name="subprofession4" value="Barbarzyńca" class="checkbox__subprofession">
+										<label for="subprofession4">Barbarzyńca</label>
+									</div>	
+								</div>
+
+								<div hidden class="subprofession_container cast2">
+									<div hidden class="subprofession5">
+										<input type="checkbox" id="subprofession5_6" name="subprofession5" value="Rycerz" class="checkbox__subprofession">
+										<label for="subprofession5">Rycerz</label>
+									</div>
+									<div hidden class="subprofession6">
+										<input type="checkbox" id="subprofession6_6" name="subprofession6" value="Paladyn" class="checkbox__subprofession">
+										<label for="subprofession6">Paladyn</label>
+									</div>
+									<div hidden class="subprofession7">
+										<input type="checkbox" id="subprofession7_6" name="subprofession7" value="Czarny Rycerz" class="checkbox__subprofession">
+										<label for="subprofession7">Czarny Rycerz</label>
+									</div>					
+								</div>
+
+								<div hidden class="subprofession_container">
+									<div hidden class="subprofession8">
+										<input type="checkbox" id="subprofession8_6" name="subprofession8" value="Złodziej" class="checkbox__subprofession">
+										<label for="subprofession8">Złodziej</label>
+									</div>
+									<div hidden class="subprofession9">
+										<input type="checkbox" id="subprofession9_6" name="subprofession9" value="Zabójca" class="checkbox__subprofession">
+										<label for="subprofession9">Zabójca</label>
+									</div>
+									<div hidden class="subprofession10">
+										<input type="checkbox" id="subprofession10_6" name="subprofession10" value="Kupiec" class="checkbox__subprofession">
+										<label for="subprofession10">Kupiec</label>
+									</div>
+								</div>
+
+								<div class="subprofession_container">
+									<div hidden class="subprofession11">
+										<input type="checkbox" id="subprofession11_6" name="subprofession11" value="Kapłan" class="checkbox__subprofession">
+										<label for="subprofession11">Kapłan</label>
+									</div>
+									<div hidden class="subprofession12">
+										<input type="checkbox" id="subprofession12_6" name="subprofession12" value="Driud" class="checkbox__subprofession">
+										<label for="subprofession12">Driud</label>
+									</div>	
+									<div class="subprofession13">
+										<input type="checkbox" id="subprofession13_6" name="subprofession13" value="Astrolog" class="checkbox__subprofession">
+										<label for="subprofession13">*Astrolog</label>
+									</div>
+									<div hidden class="subprofession14">
+										<input type="checkbox" id="subprofession14_6" name="subprofession14" value="Półbóg" class="checkbox__subprofession">
+										<label for="subprofession14">Półbóg</label>
+									</div>
+								</div>
+
+								<div hidden class="subprofession_container">
+									<div hidden class="subprofession15">
+										<input type="checkbox" id="subprofession15_6" name="subprofession15" value="Mag" class="checkbox__subprofession">
+										<label for="subprofession15">Mag</label>
+									</div>
+									<div hidden class="subprofession16">
+										<input type="checkbox" id="subprofession16_6" name="subprofession16" value="Czarnoksiężnik" class="checkbox__subprofession">
+										<label for="subprofession16">Czarnoksiężnik</label>
+									</div>	
+									<div hidden class="subprofession17">
+										<input type="checkbox" id="subprofession17_6" name="subprofession17" value="Iluzjonista" class="checkbox__subprofession">
+										<label for="subprofession17">Iluzjonista</label>
+									</div>
+									<div hidden class="subprofession18">
+										<input type="checkbox" id="subprofession18_6" name="subprofession18" value="Alchemik" class="checkbox__subprofession">
+										<label for="subprofession18">Alchemik</label>
+									</div>
+								</div>
+							</div>
+						</div><br>
+
+						<div id="div_profession7" class="subprofession_container checkbox_container profession7">
+							<input type="checkbox" id="profession7" name="profession7" value="Czarny Rycerz" class="checkbox__profession">
+							<label for="profession7">CZARNY RYCERZ</label>
+							
+							<p>
+								- 10 pkt. do biegłości w mieczach oraz 5 pkt. w łukach. włóczniach i lancach;<br>
+								- infrawizja (zdolność widzenia w naturalnych ciemnościach) o zasięgu równym 1/10 SZ (metrów);<br>
+								- samouzdrowienie 1 pkt. obrażeń po 8 godzinach wypoczynku;
+							</p>
+
+							<div id ="profession_container__subelement-profession7" class="subprofession_container__subelement profession_container__subelement_hidden">	
+								<div hidden class="subprofession_container">
+									<div hidden class="subprofession1">
+										<input type="checkbox" id="subprofession1_7" name="subprofession1" value="Wojownik" class="checkbox__subprofession">
+										<label for="subprofession1">Wojownik</label>
+									</div>
+									<div hidden class="subprofession2">
+										<input type="checkbox" id="subprofession2_7" name="subprofession2" value="Łowca" class="checkbox__subprofession">
+										<label for="subprofession2">Łowca</label>
+									</div>
+									<div hidden class="subprofession3">
+										<input type="checkbox" id="subprofession3_7" name="subprofession3" value="Gwardzista" class="checkbox__subprofession">
+										<label for="subprofession3">Gwardzista</label>
+									</div>
+									<div hidden class="subprofession4">
+										<input type="checkbox" id="subprofession4_7" name="subprofession4" value="Barbarzyńca" class="checkbox__subprofession">
+										<label for="subprofession4">Barbarzyńca</label>
+									</div>	
+								</div>
+
+								<div hidden class="subprofession_container cast2">
+									<div hidden class="subprofession5">
+										<input type="checkbox" id="subprofession5_7" name="subprofession5" value="Rycerz" class="checkbox__subprofession">
+										<label for="subprofession5">Rycerz</label>
+									</div>
+									<div hidden class="subprofession6">
+										<input type="checkbox" id="subprofession6_7" name="subprofession6" value="Paladyn" class="checkbox__subprofession">
+										<label for="subprofession6">Paladyn</label>
+									</div>
+									<div hidden class="subprofession7">
+										<input type="checkbox" id="subprofession7_7" name="subprofession7" value="Czarny Rycerz" class="checkbox__subprofession">
+										<label for="subprofession7">Czarny Rycerz</label>
+									</div>					
+								</div>
+
+								<div hidden class="subprofession_container">
+									<div hidden class="subprofession8">
+										<input type="checkbox" id="subprofession8_7" name="subprofession8" value="Złodziej" class="checkbox__subprofession">
+										<label for="subprofession8">Złodziej</label>
+									</div>
+									<div hidden class="subprofession9">
+										<input type="checkbox" id="subprofession9_7" name="subprofession9" value="Zabójca" class="checkbox__subprofession">
+										<label for="subprofession9">Zabójca</label>
+									</div>
+									<div hidden class="subprofession10">
+										<input type="checkbox" id="subprofession10_7" name="subprofession10" value="Kupiec" class="checkbox__subprofession">
+										<label for="subprofession10">Kupiec</label>
+									</div>
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession11">
+										<input type="checkbox" id="subprofession11_7" name="subprofession11" value="Kapłan" class="checkbox__subprofession">
+										<label for="subprofession11">Kapłan</label>
+									</div>
+									<div hidden class="subprofession12">
+										<input type="checkbox" id="subprofession12_7" name="subprofession12" value="Driud" class="checkbox__subprofession">
+										<label for="subprofession12">Driud</label>
+									</div>	
+									<div class="subprofession13">
+										<input type="checkbox" id="subprofession13_7" name="subprofession13" value="Astrolog" class="checkbox__subprofession">
+										<label for="subprofession13">*Astrolog</label>
+									</div>
+									<div hidden class="subprofession14">
+										<input type="checkbox" id="subprofession14_7" name="subprofession14" value="Półbóg" class="checkbox__subprofession">
+										<label for="subprofession14">Półbóg</label>
+									</div>
+								</div>
+
+								<div hidden class="subprofession_container">
+									<div hidden class="subprofession15">
+										<input type="checkbox" id="subprofession15_7" name="subprofession15" value="Mag" class="checkbox__subprofession">
+										<label for="subprofession15">Mag</label>
+									</div>
+									<div hidden class="subprofession16">
+										<input type="checkbox" id="subprofession16_7" name="subprofession16" value="Czarnoksiężnik" class="checkbox__subprofession">
+										<label for="subprofession16">Czarnoksiężnik</label>
+									</div>	
+									<div hidden class="subprofession17">
+										<input type="checkbox" id="subprofession17_7" name="subprofession17" value="Iluzjonista" class="checkbox__subprofession">
+										<label for="subprofession17">Iluzjonista</label>
+									</div>
+									<div hidden class="subprofession18">
+										<input type="checkbox" id="subprofession18_7" name="subprofession18" value="Alchemik" class="checkbox__subprofession">
+										<label for="subprofession18">Alchemik</label>
+									</div>
+								</div>
+							</div>
+						</div><br>
+					</section>
+
+					<section id="profession_cast3" class="subprofession_cast">
+						<h3>Kasta złodziejska</h3>
+						<div id="div_profession8" class="subprofession_container checkbox_container profession8">
+							<input type="checkbox" id="profession8" name="profession8" value="Złodziej" class="checkbox__profession">
+							<label for="profession8">ZŁODZIEJ</label>
+							
+							<p>
+								- 10 pkt. do biegłości w mieczach oraz 5 pkt. w łukach. włóczniach i lancach;<br>
+								- infrawizja (zdolność widzenia w naturalnych ciemnościach) o zasięgu równym 1/10 SZ (metrów);<br>
+								- samouzdrowienie 1 pkt. obrażeń po 8 godzinach wypoczynku;
+							</p>
+
+							<div id ="profession_container__subelement-profession8" class="subprofession_container__subelement profession_container__subelement_hidden">		
+								<div class="subprofession_container">
+									<div class="subprofession1">
+										<input type="checkbox" id="subprofession1_8" name="subprofession1" value="Wojownik" class="checkbox__subprofession">
+										<label for="subprofession1">Wojownik</label>
+									</div>
+									<div class="subprofession2">
+										<input type="checkbox" id="subprofession2_8" name="subprofession2" value="Łowca" class="checkbox__subprofession">
+										<label for="subprofession2">*Łowca</label>
+									</div>
+									<div hidden class="subprofession3">
+										<input type="checkbox" id="subprofession3_8" name="subprofession3" value="Gwardzista" class="checkbox__subprofession">
+										<label for="subprofession3">Gwardzista</label>
+									</div>
+									<div class="subprofession4">
+										<input type="checkbox" id="subprofession4_8" name="subprofession4" value="Barbarzyńca" class="checkbox__subprofession">
+										<label for="subprofession4">Barbarzyńca</label>
+									</div>	
+								</div>
+
+								<div hidden class="subprofession_container cast2">
+									<div hidden class="subprofession5">
+										<input type="checkbox" id="subprofession5_8" name="subprofession5" value="Rycerz" class="checkbox__subprofession">
+										<label for="subprofession5">Rycerz</label>
+									</div>
+									<div hidden class="subprofession6">
+										<input type="checkbox" id="subprofession6_8" name="subprofession6" value="Paladyn" class="checkbox__subprofession">
+										<label for="subprofession6">Paladyn</label>
+									</div>
+									<div hidden class="subprofession7">
+										<input type="checkbox" id="subprofession7_8" name="subprofession7" value="Czarny Rycerz" class="checkbox__subprofession">
+										<label for="subprofession7">Czarny Rycerz</label>
+									</div>					
+								</div>
+
+								<div class="subprofession_container">
+									<div hidden class="subprofession8">
+										<input type="checkbox" id="subprofession8_8" name="subprofession8" value="Złodziej" class="checkbox__subprofession">
+										<label for="subprofession8">Złodziej</label>
+									</div>
+									<div hidden class="subprofession9">
+										<input type="checkbox" id="subprofession9_8" name="subprofession9" value="Zabójca" class="checkbox__subprofession">
+										<label for="subprofession9">Zabójca</label>
+									</div>
+									<div class="subprofession10">
+										<input type="checkbox" id="subprofession10_8" name="subprofession10" value="Kupiec" class="checkbox__subprofession">
+										<label for="subprofession10">*Kupiec</label>
+									</div>
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession11">
+										<input type="checkbox" id="subprofession11_8" name="subprofession11" value="Kapłan" class="checkbox__subprofession">
+										<label for="subprofession11">Kapłan</label>
+									</div>
+									<div hidden class="subprofession12">
+										<input type="checkbox" id="subprofession12_8" name="subprofession12" value="Driud" class="checkbox__subprofession">
+										<label for="subprofession12">Driud</label>
+									</div>	
+									<div hidden class="subprofession13">
+										<input type="checkbox" id="subprofession13_8" name="subprofession13" value="Astrolog" class="checkbox__subprofession">
+										<label for="subprofession13">Astrolog</label>
+									</div>
+									<div hidden class="subprofession14">
+										<input type="checkbox" id="subprofession14_8" name="subprofession14" value="Półbóg" class="checkbox__subprofession">
+										<label for="subprofession14">Półbóg</label>
+									</div>
+								</div>
+
+								<div class="subprofession_container">
+									<div hidden class="subprofession15">
+										<input type="checkbox" id="subprofession15_8" name="subprofession15" value="Mag" class="checkbox__subprofession">
+										<label for="subprofession15">Mag</label>
+									</div>
+									<div class="subprofession16">
+										<input type="checkbox" id="subprofession16_8" name="subprofession16" value="Czarnoksiężnik" class="checkbox__subprofession">
+										<label for="subprofession16">*Czarnoksiężnik</label>
+									</div>	
+									<div hidden class="subprofession17">
+										<input type="checkbox" id="subprofession17_8" name="subprofession17" value="Iluzjonista" class="checkbox__subprofession">
+										<label for="subprofession17">Iluzjonista</label>
+									</div>
+									<div hidden class="subprofession18">
+										<input type="checkbox" id="subprofession18_8" name="subprofession18" value="Alchemik" class="checkbox__subprofession">
+										<label for="subprofession18">Alchemik</label>
+									</div>
+								</div>
+							</div>
+						</div><br>
+
+						<div id="div_profession9" class="subprofession_container checkbox_container profession9">
+							<input type="checkbox" id="profession9" name="profession9" value="Zabójca" class="checkbox__profession">
+							<label for="profession6">ZABÓJCA</label>
+							
+							<p>
+								- 10 pkt. do biegłości w mieczach oraz 5 pkt. w łukach. włóczniach i lancach;<br>
+								- infrawizja (zdolność widzenia w naturalnych ciemnościach) o zasięgu równym 1/10 SZ (metrów);<br>
+								- samouzdrowienie 1 pkt. obrażeń po 8 godzinach wypoczynku;
+							</p>
+
+							<div id ="profession_container__subelement-profession9" class="subprofession_container__subelement profession_container__subelement_hidden">		
+								<div class="subprofession_container">
+									<div class="subprofession1">
+										<input type="checkbox" id="subprofession1_9" name="subprofession1" value="Wojownik" class="checkbox__subprofession">
+										<label for="subprofession1">Wojownik</label>
+									</div>
+									<div hidden class="subprofession2">
+										<input type="checkbox" id="subprofession2_9" name="subprofession2" value="Łowca" class="checkbox__subprofession">
+										<label for="subprofession2">Łowca</label>
+									</div>
+									<div class="subprofession3">
+										<input type="checkbox" id="subprofession3_9" name="subprofession3" value="Gwardzista" class="checkbox__subprofession">
+										<label for="subprofession3">Gwardzista</label>
+									</div>
+									<div class="subprofession4">
+										<input type="checkbox" id="subprofession4_9" name="subprofession4" value="Barbarzyńca" class="checkbox__subprofession">
+										<label for="subprofession4">Barbarzyńca</label>
+									</div>	
+								</div>
+
+								<div hidden class="subprofession_container cast2">
+									<div hidden class="subprofession5">
+										<input type="checkbox" id="subprofession5_9" name="subprofession5" value="Rycerz" class="checkbox__subprofession">
+										<label for="subprofession5">Rycerz</label>
+									</div>
+									<div hidden class="subprofession6">
+										<input type="checkbox" id="subprofession6_9" name="subprofession6" value="Paladyn" class="checkbox__subprofession">
+										<label for="subprofession6">Paladyn</label>
+									</div>
+									<div hidden class="subprofession7">
+										<input type="checkbox" id="subprofession7_9" name="subprofession7" value="Czarny Rycerz" class="checkbox__subprofession">
+										<label for="subprofession7">Czarny Rycerz</label>
+									</div>					
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession8">
+										<input type="checkbox" id="subprofession8_9" name="subprofession8" value="Złodziej" class="checkbox__subprofession">
+										<label for="subprofession8">*Złodziej</label>
+									</div>
+									<div class="subprofession9">
+										<input type="checkbox" id="subprofession9_9" name="subprofession9" value="Zabójca" class="checkbox__subprofession">
+										<label for="subprofession9">Zabójca</label>
+									</div>
+									<div class="subprofession10">
+										<input type="checkbox" id="subprofession10_9" name="subprofession10" value="Kupiec" class="checkbox__subprofession">
+										<label for="subprofession10">*Kupiec</label>
+									</div>
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession11">
+										<input type="checkbox" id="subprofession11_9" name="subprofession11" value="Kapłan" class="checkbox__subprofession">
+										<label for="subprofession11">Kapłan</label>
+									</div>
+									<div hidden class="subprofession12">
+										<input type="checkbox" id="subprofession12_9" name="subprofession12" value="Driud" class="checkbox__subprofession">
+										<label for="subprofession12">Driud</label>
+									</div>	
+									<div hidden class="subprofession13">
+										<input type="checkbox" id="subprofession13_9" name="subprofession13" value="Astrolog" class="checkbox__subprofession">
+										<label for="subprofession13">Astrolog</label>
+									</div>
+									<div hidden class="subprofession14">
+										<input type="checkbox" id="subprofession14_9" name="subprofession14" value="Półbóg" class="checkbox__subprofession">
+										<label for="subprofession14">Półbóg</label>
+									</div>
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession15">
+										<input type="checkbox" id="subprofession15_9" name="subprofession15" value="Mag" class="checkbox__subprofession">
+										<label for="subprofession15">Mag</label>
+									</div>
+									<div class="subprofession16">
+										<input type="checkbox" id="subprofession16_9" name="subprofession16" value="Czarnoksiężnik" class="checkbox__subprofession">
+										<label for="subprofession16">Czarnoksiężnik</label>
+									</div>	
+									<div class="subprofession17">
+										<input type="checkbox" id="subprofession17_9" name="subprofession17" value="Iluzjonista" class="checkbox__subprofession">
+										<label for="subprofession17">Iluzjonista</label>
+									</div>
+									<div class="subprofession18">
+										<input type="checkbox" id="subprofession18_9" name="subprofession18" value="Alchemik" class="checkbox__subprofession">
+										<label for="subprofession18">Alchemik</label>
+									</div>
+								</div>
+							</div>
+						</div><br>
+
+						<div id="div_profession10" class="subprofession_container checkbox_container profession10">
+							<input type="checkbox" id="profession10" name="profession10" value="Kupiec" class="checkbox__profession">
+							<label for="profession10">KUPIEC</label>
+							
+							<p>
+								- 10 pkt. do biegłości w mieczach oraz 5 pkt. w łukach. włóczniach i lancach;<br>
+								- infrawizja (zdolność widzenia w naturalnych ciemnościach) o zasięgu równym 1/10 SZ (metrów);<br>
+								- samouzdrowienie 1 pkt. obrażeń po 8 godzinach wypoczynku;
+							</p>
+
+							<div id ="profession_container__subelement-profession10" class="subprofession_container__subelement profession_container__subelement_hidden">		
+								<div class="subprofession_container">
+									<div class="subprofession1">
+										<input type="checkbox" id="subprofession1_10" name="subprofession1" value="Wojownik" class="checkbox__subprofession">
+										<label for="subprofession1">Wojownik</label>
+									</div>
+									<div class="subprofession2">
+										<input type="checkbox" id="subprofession2_10" name="subprofession2" value="Łowca" class="checkbox__subprofession">
+										<label for="subprofession2">Łowca</label>
+									</div>
+									<div class="subprofession3">
+										<input type="checkbox" id="subprofession3_10" name="subprofession3" value="Gwardzista" class="checkbox__subprofession">
+										<label for="subprofession3">Gwardzista</label>
+									</div>
+									<div class="subprofession4">
+										<input type="checkbox" id="subprofession4_10" name="subprofession4" value="Barbarzyńca" class="checkbox__subprofession">
+										<label for="subprofession4">Barbarzyńca</label>
+									</div>	
+								</div>
+
+								<div hidden class="subprofession_container cast2">
+									<div hidden class="subprofession5">
+										<input type="checkbox" id="subprofession5_10" name="subprofession5" value="Rycerz" class="checkbox__subprofession">
+										<label for="subprofession5">Rycerz</label>
+									</div>
+									<div hidden class="subprofession6">
+										<input type="checkbox" id="subprofession6_10" name="subprofession6" value="Paladyn" class="checkbox__subprofession">
+										<label for="subprofession6">Paladyn</label>
+									</div>
+									<div hidden class="subprofession7">
+										<input type="checkbox" id="subprofession7_10" name="subprofession7" value="Czarny Rycerz" class="checkbox__subprofession">
+										<label for="subprofession7">Czarny Rycerz</label>
+									</div>					
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession8">
+										<input type="checkbox" id="subprofession8_10" name="subprofession8" value="Złodziej" class="checkbox__subprofession">
+										<label for="subprofession8">Złodziej</label>
+									</div>
+									<div class="subprofession9">
+										<input type="checkbox" id="subprofession9_10" name="subprofession9" value="Zabójca" class="checkbox__subprofession">
+										<label for="subprofession9">Zabójca</label>
+									</div>
+									<div class="subprofession10">
+										<input type="checkbox" id="subprofession10_10" name="subprofession10" value="Kupiec" class="checkbox__subprofession">
+										<label for="subprofession10">Kupiec</label>
+									</div>
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession11">
+										<input type="checkbox" id="subprofession11_10" name="subprofession11" value="Kapłan" class="checkbox__subprofession">
+										<label for="subprofession11">Kapłan</label>
+									</div>
+									<div class="subprofession12">
+										<input type="checkbox" id="subprofession12_10" name="subprofession12" value="Driud" class="checkbox__subprofession">
+										<label for="subprofession12">Driud</label>
+									</div>	
+									<div class="subprofession13">
+										<input type="checkbox" id="subprofession13_10" name="subprofession13" value="Astrolog" class="checkbox__subprofession">
+										<label for="subprofession13">Astrolog</label>
+									</div>
+									<div hidden class="subprofession14">
+										<input type="checkbox" id="subprofession14_10" name="subprofession14" value="Półbóg" class="checkbox__subprofession">
+										<label for="subprofession14">Półbóg</label>
+									</div>
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession15">
+										<input type="checkbox" id="subprofession15_10" name="subprofession15" value="Mag" class="checkbox__subprofession">
+										<label for="subprofession15">Mag</label>
+									</div>
+									<div class="subprofession16">
+										<input type="checkbox" id="subprofession16_10" name="subprofession16" value="Czarnoksiężnik" class="checkbox__subprofession">
+										<label for="subprofession16">Czarnoksiężnik</label>
+									</div>	
+									<div class="subprofession17">
+										<input type="checkbox" id="subprofession17_10" name="subprofession17" value="Iluzjonista" class="checkbox__subprofession">
+										<label for="subprofession17">Iluzjonista</label>
+									</div>
+									<div class="subprofession18">
+										<input type="checkbox" id="subprofession18_10" name="subprofession18" value="Alchemik" class="checkbox__subprofession">
+										<label for="subprofession18">Alchemik</label>
+									</div>
+								</div>
+							</div>
+						</div><br>
+
+					</section>
+
+					<section id="profession_cast4" class="subprofession_cast">
+						<h3>Kasta kleryczna</h3>
+						<div id="div_profession11" class="subprofession_container checkbox_container profession11 profession11">
+							<input type="checkbox" id="profession11" name="profession11" value="Kapłan" class="checkbox__profession">
+							<label for="profession11">KAPŁAN</label>
+							
+							<p>
+								- 10 pkt. do biegłości w mieczach oraz 5 pkt. w łukach. włóczniach i lancach;<br>
+								- infrawizja (zdolność widzenia w naturalnych ciemnościach) o zasięgu równym 1/10 SZ (metrów);<br>
+								- samouzdrowienie 1 pkt. obrażeń po 8 godzinach wypoczynku;
+							</p>
+							
+							<div id ="profession_container__subelement-profession11" class="subprofession_container__subelement profession_container__subelement_hidden">		
+								<div class="subprofession_container">
+									<div class="subprofession1">
+										<input type="checkbox" id="subprofession1_11" name="subprofession1" value="Wojownik" class="checkbox__subprofession">
+										<label for="subprofession1">Wojownik</label>
+									</div>
+									<div class="subprofession2">
+										<input type="checkbox" id="subprofession2_11" name="subprofession2" value="Łowca" class="checkbox__subprofession">
+										<label for="subprofession2">Łowca</label>
+									</div>
+									<div class="subprofession3">
+										<input type="checkbox" id="subprofession3_11" name="subprofession3" value="Gwardzista" class="checkbox__subprofession">
+										<label for="subprofession3">Gwardzista</label>
+									</div>
+									<div class="subprofession4">
+										<input type="checkbox" id="subprofession4_11" name="subprofession4" value="Barbarzyńca" class="checkbox__subprofession">
+										<label for="subprofession4">Barbarzyńca</label>
+									</div>	
+								</div>
+
+								<div class="subprofession_container cast2">
+									<div class="subprofession5">
+										<input type="checkbox" id="subprofession5_11" name="subprofession5" value="Rycerz" class="checkbox__subprofession">
+										<label for="subprofession5">Rycerz</label>
+									</div>
+									<div hidden class="subprofession6">
+										<input type="checkbox" id="subprofession6_11" name="subprofession6" value="Paladyn" class="checkbox__subprofession">
+										<label for="subprofession6">Paladyn</label>
+									</div>
+									<div class="subprofession7">
+										<input type="checkbox" id="subprofession7_11" name="subprofession7" value="Czarny Rycerz" class="checkbox__subprofession">
+										<label for="subprofession7">Czarny Rycerz</label>
+									</div>					
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession8">
+										<input type="checkbox" id="subprofession8_11" name="subprofession8" value="Złodziej" class="checkbox__subprofession">
+										<label for="subprofession8">Złodziej</label>
+									</div>
+									<div class="subprofession9">
+										<input type="checkbox" id="subprofession9_11" name="subprofession9" value="Zabójca" class="checkbox__subprofession">
+										<label for="subprofession9">Zabójca</label>
+									</div>
+									<div class="subprofession10">
+										<input type="checkbox" id="subprofession10_11" name="subprofession10" value="Kupiec" class="checkbox__subprofession">
+										<label for="subprofession10">Kupiec</label>
+									</div>
+								</div>
+
+								<div hidden class="subprofession_container">
+									<div hidden class="subprofession11">
+										<input type="checkbox" id="subprofession11_11" name="subprofession11" value="Kapłan" class="checkbox__subprofession">
+										<label for="subprofession11">Kapłan</label>
+									</div>
+									<div hidden class="subprofession12">
+										<input type="checkbox" id="subprofession12_11" name="subprofession12" value="Driud" class="checkbox__subprofession">
+										<label for="subprofession12">Driud</label>
+									</div>	
+									<div hidden class="subprofession13">
+										<input type="checkbox" id="subprofession13_11" name="subprofession13" value="Astrolog" class="checkbox__subprofession">
+										<label for="subprofession13">Astrolog</label>
+									</div>
+									<div hidden class="subprofession14">
+										<input type="checkbox" id="subprofession14_11" name="subprofession14" value="Półbóg" class="checkbox__subprofession">
+										<label for="subprofession14">Półbóg</label>
+									</div>
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession15">
+										<input type="checkbox" id="subprofession15_11" name="subprofession15" value="Mag" class="checkbox__subprofession">
+										<label for="subprofession15">Mag</label>
+									</div>
+									<div class="subprofession16">
+										<input type="checkbox" id="subprofession16_11" name="subprofession16" value="Czarnoksiężnik" class="checkbox__subprofession">
+										<label for="subprofession16">Czarnoksiężnik</label>
+									</div>	
+									<div class="subprofession17">
+										<input type="checkbox" id="subprofession17_11" name="subprofession17" value="Iluzjonista" class="checkbox__subprofession">
+										<label for="subprofession17">Iluzjonista</label>
+									</div>
+									<div class="subprofession18">
+										<input type="checkbox" id="subprofession18_11" name="subprofession18" value="Alchemik" class="checkbox__subprofession">
+										<label for="subprofession18">Alchemik</label>
+									</div>
+								</div>
+							</div>
+
+
+						</div><br>
+
+						<div id="div_profession12" class="subprofession_container checkbox_container profession12">
+							<input type="checkbox" id="profession12" name="profession12" value="Driud" class="checkbox__profession">
+							<label for="profession12">DRUID</label>
+							
+							<p>
+								- 10 pkt. do biegłości w mieczach oraz 5 pkt. w łukach. włóczniach i lancach;<br>
+								- infrawizja (zdolność widzenia w naturalnych ciemnościach) o zasięgu równym 1/10 SZ (metrów);<br>
+								- samouzdrowienie 1 pkt. obrażeń po 8 godzinach wypoczynku;
+							</p>
+
+							<div id ="profession_container__subelement-profession12" class="subprofession_container__subelement">		
+								<div class="subprofession_container">
+									<div class="subprofession1">
+										<input type="checkbox" id="subprofession1_12" name="subprofession1" value="Wojownik" class="checkbox__subprofession">
+										<label for="subprofession1">Wojownik</label>
+									</div>
+									<div class="subprofession2">
+										<input type="checkbox" id="subprofession2_12" name="subprofession2" value="Łowca" class="checkbox__subprofession">
+										<label for="subprofession2">Łowca</label>
+									</div>
+									<div hidden class="subprofession3">
+										<input type="checkbox" id="subprofession3_12" name="subprofession3" value="Gwardzista" class="checkbox__subprofession">
+										<label for="subprofession3">Gwardzista</label>
+									</div>
+									<div class="subprofession4">
+										<input type="checkbox" id="subprofession4_12" name="subprofession4" value="Barbarzyńca" class="checkbox__subprofession">
+										<label for="subprofession4">*Barbarzyńca</label>
+									</div>	
+								</div>
+
+								<div hidden class="subprofession_container cast2">
+									<div hidden class="subprofession5">
+										<input type="checkbox" id="subprofession5_12" name="subprofession5" value="Rycerz" class="checkbox__subprofession">
+										<label for="subprofession5">Rycerz</label>
+									</div>
+									<div hidden class="subprofession6">
+										<input type="checkbox" id="subprofession6_12" name="subprofession6" value="Paladyn" class="checkbox__subprofession">
+										<label for="subprofession6">Paladyn</label>
+									</div>
+									<div hidden class="subprofession7">
+										<input type="checkbox" id="subprofession7_12" name="subprofession7" value="Czarny Rycerz" class="checkbox__subprofession">
+										<label for="subprofession7">Czarny Rycerz</label>
+									</div>					
+								</div>
+
+								<div class="subprofession_container">
+									<div hidden class="subprofession8">
+										<input type="checkbox" id="subprofession8_12" name="subprofession8" value="Złodziej" class="checkbox__subprofession">
+										<label for="subprofession8">Złodziej</label>
+									</div>
+									<div hidden class="subprofession9">
+										<input type="checkbox" id="subprofession9_12" name="subprofession9" value="Zabójca" class="checkbox__subprofession">
+										<label for="subprofession9">Zabójca</label>
+									</div>
+									<div class="subprofession10">
+										<input type="checkbox" id="subprofession10_12" name="subprofession10" value="Kupiec" class="checkbox__subprofession">
+										<label for="subprofession10">*Kupiec</label>
+									</div>
+								</div>
+
+								<div class="subprofession_container">
+									<div hidden class="subprofession11">
+										<input type="checkbox" id="subprofession11_12" name="subprofession11" value="Kapłan" class="checkbox__subprofession">
+										<label for="subprofession11">Kapłan</label>
+									</div>
+									<div hidden class="subprofession12">
+										<input type="checkbox" id="subprofession12_12" name="subprofession12" value="Driud" class="checkbox__subprofession">
+										<label for="subprofession12">Driud</label>
+									</div>	
+									<div class="subprofession13">
+										<input type="checkbox" id="subprofession13_12" name="subprofession13" value="Astrolog" class="checkbox__subprofession">
+										<label for="subprofession13">Astrolog</label>
+									</div>
+									<div hidden class="subprofession14">
+										<input type="checkbox" id="subprofession14_12" name="subprofession14" value="Półbóg" class="checkbox__subprofession">
+										<label for="subprofession14">Półbóg</label>
+									</div>
+								</div>
+
+								<div hidden class="subprofession_container">
+									<div hidden class="subprofession15">
+										<input type="checkbox" id="subprofession15_12" name="subprofession15" value="Mag" class="checkbox__subprofession">
+										<label for="subprofession15">Mag</label>
+									</div>
+									<div hidden class="subprofession16">
+										<input type="checkbox" id="subprofession16_12" name="subprofession16" value="Czarnoksiężnik" class="checkbox__subprofession">
+										<label for="subprofession16">Czarnoksiężnik</label>
+									</div>	
+									<div hidden class="subprofession17">
+										<input type="checkbox" id="subprofession17_12" name="subprofession17" value="Iluzjonista" class="checkbox__subprofession">
+										<label for="subprofession17">Iluzjonista</label>
+									</div>
+									<div hidden class="subprofession18">
+										<input type="checkbox" id="subprofession18_12" name="subprofession18" value="Alchemik" class="checkbox__subprofession">
+										<label for="subprofession18">Alchemik</label>
+									</div>
+								</div>
+							</div>
+
+
+							<div id ="profession_container__profession12-druid_rings" class="subprofession_container__subelement">		
+								<div class="subprofession12-druid_rings">
+									<h5>Wielki Krąg Życia</h5>
+									<div class="druid_ring">
+										<input type="checkbox" id="druid_ring1" name="druid_ring1" value="Krąg Roślin" class="checkbox__druid_ring">
+										<label for="druid_ring1">Krąg Roślin</label>
+									</div>
+									<div class="druid_ring">
+										<input type="checkbox" id="druid_ring2" name="druid_ring2" value="Krąg Zwierząt" class="checkbox__druid_ring">
+										<label for="druid_ring2">Krąg Zwierząt</label>
+									</div>
+									<div class="druid_ring">
+										<input type="checkbox" id="druid_ring3" name="druid_ring3" value="Krąg Życia" class="checkbox__druid_ring">
+										<label for="druid_ring3">Krąg Życia</label>
+									</div>
+									<div class="druid_ring">
+										<input type="checkbox" id="druid_ring4" name="druid_ring4" value="Krąg Śmierci" class="checkbox__druid_ring">
+										<label for="druid_ring4">Krąg Śmierci</label>
+									</div>	
+								</div>
+
+								<div class="subprofession12-druid_rings">
+									<h5>Wielki Krąg Równowagi</h5>
+									<div  class="druid_ring">
+										<input type="checkbox" id="druid_ring5" name="druid_ring5" value="Krąg Prawa" class="checkbox__druid_ring">
+										<label for="druid_ring5">Krąg Prawa</label>
+									</div>
+									<div  class="druid_ring">
+										<input type="checkbox" id="druid_ring6" name="druid_ring6" value="Krąg Neutralności" class="checkbox__druid_ring">
+										<label for="druid_ring6">Krąg Neutralności</label>
+									</div>
+									<div  class="druid_ring">
+										<input type="checkbox" id="druid_ring7" name="druid_ring7" value="Krąg Chaosu" class="checkbox__druid_ring">
+										<label for="druid_ring7">Krąg Chaosu</label>
+									</div>	
+									<div  class="druid_ring">
+										<input type="checkbox" id="druid_ring8" name="druid_ring8" value="Krąg Pojednania" class="checkbox__druid_ring">
+										<label for="druid_ring8">Krąg Pojednania</label>
+									</div>					
+								</div>
+
+								<div class="subprofession12-druid_rings">
+									<h5>Wielki Krąg Czasu</h5>
+									<div class="druid_ring">
+										<input type="checkbox" id="druid_ring9" name="druid_ring9" value="Krąg Przeszłości" class="checkbox__druid_ring">
+										<label for="druid_ring9">Krąg Przeszłości</label>
+									</div>
+									<div class="druid_ring">
+										<input type="checkbox" id="druid_ring10" name="druid_ring10" value="Krąg Przyszłości" class="checkbox__druid_ring">
+										<label for="druid_ring10">Krąg Przyszłości</label>
+									</div>
+									<div class="druid_ring">
+										<input type="checkbox" id="druid_ring11" name="druid_ring11" value="Krąg Teraźniejszości" class="checkbox__druid_ring">
+										<label for="druid_ring11">Krąg Teraźniejszości</label>
+									</div>
+									<div class="druid_ring">
+										<input type="checkbox" id="druid_ring12" name="druid_ring12" value="Krąg Istoty" class="checkbox__druid_ring">
+										<label for="druid_ring12">Krąg Istoty</label>
+									</div>
+								</div>
+
+								<div class="subprofession12-druid_rings">
+									<h5>Wielki Krąg Żywiołów</h5>
+									<div class="druid_ring">
+										<input type="checkbox" id="druid_ring13" name="druid_ring13" value="Krąg Ognia" class="checkbox__druid_ring">
+										<label for="druid_ring13">Krąg Ognia</label>
+									</div>
+									<div class="druid_ring">
+										<input type="checkbox" id="druid_ring14" name="druid_ring14" value="Krąg Wody" class="checkbox__druid_ring">
+										<label for="druid_ring14">Krąg Wody</label>
+									</div>	
+									<div class="druid_ring">
+										<input type="checkbox" id="druid_ring15" name="druid_ring15" value="Krąg Powietrza" class="checkbox__druid_ring">
+										<label for="druid_ring15">Krąg Powietrza</label>
+									</div>
+									<div class="druid_ring">
+										<input type="checkbox" id="druid_ring16" name="druid_ring16" value="Krąg Ziemi" class="checkbox__druid_ring">
+										<label for="druid_ring16">Krąg Ziemi</label>
+									</div>
+								</div>
+
+								
+							</div>
+						</div><br>
+
+						<div id="div_profession13" class="subprofession_container checkbox_container profession13">
+							<input type="checkbox" id="profession13" name="profession13" value="Astrolog" class="checkbox__profession">
+							<label for="profession13">ASTROLOG</label>
+							
+							<p>
+								- 10 pkt. do biegłości w mieczach oraz 5 pkt. w łukach. włóczniach i lancach;<br>
+								- infrawizja (zdolność widzenia w naturalnych ciemnościach) o zasięgu równym 1/10 SZ (metrów);<br>
+								- samouzdrowienie 1 pkt. obrażeń po 8 godzinach wypoczynku;
+							</p>
+
+							<div id ="profession_container__subelement-profession13" class="subprofession_container__subelement profession_container__subelement_hidden">
+								<div class="subprofession_container">
+									<div class="subprofession1">
+										<input type="checkbox" id="subprofession1_13" name="subprofession1" value="Wojownik" class="checkbox__subprofession">
+										<label for="subprofession1">Wojownik</label>
+									</div>
+									<div class="subprofession2">
+										<input type="checkbox" id="subprofession2_13_13" name="subprofession2" value="Łowca" class="checkbox__subprofession">
+										<label for="subprofession2">*Łowca</label>
+									</div>
+									<div class="subprofession3">
+										<input type="checkbox" id="subprofession3_13" name="subprofession3" value="Gwardzista" class="checkbox__subprofession">
+										<label for="subprofession3">*Gwardzista</label>
+									</div>
+									<div hidden class="subprofession4">
+										<input type="checkbox" id="subprofession4_13" name="subprofession4" value="Barbarzyńca" class="checkbox__subprofession">
+										<label for="subprofession4">Barbarzyńca</label>
+									</div>	
+								</div>
+
+								<div class="subprofession_container cast2">
+									<div class="subprofession5">
+										<input type="checkbox" id="subprofession5_13" name="subprofession5" value="Rycerz" class="checkbox__subprofession">
+										<label for="subprofession5">Rycerz</label>
+									</div>
+									<div class="subprofession6">
+										<input type="checkbox" id="subprofession6_13" name="subprofession6" value="Paladyn" class="checkbox__subprofession">
+										<label for="subprofession6">Paladyn</label>
+									</div>
+									<div class="subprofession7">
+										<input type="checkbox" id="subprofession7_13" name="subprofession7" value="Czarny Rycerz" class="checkbox__subprofession">
+										<label for="subprofession7">Czarny Rycerz</label>
+									</div>					
+								</div>
+
+								<div class="subprofession_container">
+									<div hidden class="subprofession8">
+										<input type="checkbox" id="subprofession8_13" name="subprofession8" value="Złodziej" class="checkbox__subprofession">
+										<label for="subprofession8">Złodziej</label>
+									</div>
+									<div hidden class="subprofession9">
+										<input type="checkbox" id="subprofession9_13" name="subprofession9" value="Zabójca" class="checkbox__subprofession">
+										<label for="subprofession9">Zabójca</label>
+									</div>
+									<div class="subprofession10">
+										<input type="checkbox" id="subprofession10_13" name="subprofession10" value="Kupiec" class="checkbox__subprofession">
+										<label for="subprofession10">Kupiec</label>
+									</div>
+								</div>
+
+								<div class="subprofession_container">
+									<div hidden class="subprofession11">
+										<input type="checkbox" id="subprofession11_13" name="subprofession11" value="Kapłan" class="checkbox__subprofession">
+										<label for="subprofession11">Kapłan</label>
+									</div>
+									<div class="subprofession12">
+										<input type="checkbox" id="subprofession12_13" name="subprofession12" value="Driud" class="checkbox__subprofession">
+										<label for="subprofession12">*Driud</label>
+									</div>	
+									<div hidden class="subprofession13">
+										<input type="checkbox" id="subprofession13_13" name="subprofession13" value="Astrolog" class="checkbox__subprofession">
+										<label for="subprofession13">Astrolog</label>
+									</div>
+									<div hidden class="subprofession14">
+										<input type="checkbox" id="subprofession14_13" name="subprofession14" value="Półbóg" class="checkbox__subprofession">
+										<label for="subprofession14">Półbóg</label>
+									</div>
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession15">
+										<input type="checkbox" id="subprofession15_13" name="subprofession15" value="Mag" class="checkbox__subprofession">
+										<label for="subprofession15">Mag</label>
+									</div>
+									<div class="subprofession16">
+										<input type="checkbox" id="subprofession16_13" name="subprofession16" value="Czarnoksiężnik" class="checkbox__subprofession">
+										<label for="subprofession16">Czarnoksiężnik</label>
+									</div>	
+									<div class="subprofession17">
+										<input type="checkbox" id="subprofession17_13" name="subprofession17" value="Iluzjonista" class="checkbox__subprofession">
+										<label for="subprofession17">Iluzjonista</label>
+									</div>
+									<div class="subprofession18">
+										<input type="checkbox" id="subprofession18_13" name="subprofession18" value="Alchemik" class="checkbox__subprofession">
+										<label for="subprofession18">Alchemik</label>
+									</div>
+								</div>
+							</div>
+						</div><br>
+
+						<div id="div_profession14" class="subprofession_container checkbox_container profession14">
+							<input type="checkbox" id="profession14" name="profession14" value="Półbóg" class="checkbox__profession">
+							<label for="profession14">PÓŁBÓG</label>
+							
+							<p>
+								- 10 pkt. do biegłości w mieczach oraz 5 pkt. w łukach. włóczniach i lancach;<br>
+								- infrawizja (zdolność widzenia w naturalnych ciemnościach) o zasięgu równym 1/10 SZ (metrów);<br>
+								- samouzdrowienie 1 pkt. obrażeń po 8 godzinach wypoczynku;
+							</p>
+
+							<div id ="profession_container__subelement-profession14" class="subprofession_container__subelement profession_container__subelement_hidden">
+								<div hidden class="subprofession_container">
+									<div class="subprofession1">
+										<input type="checkbox" id="subprofession1_14" name="subprofession1" value="Wojownik" class="checkbox__subprofession">
+										<label for="subprofession1">Wojownik</label>
+									</div>
+									<div class="subprofession2">
+										<input type="checkbox" id="subprofession2_14" name="subprofession2" value="Łowca" class="checkbox__subprofession">
+										<label for="subprofession2">Łowca</label>
+									</div>
+									<div class="subprofession3">
+										<input type="checkbox" id="subprofession3_14" name="subprofession3" value="Gwardzista" class="checkbox__subprofession">
+										<label for="subprofession3">Gwardzista</label>
+									</div>
+									<div class="subprofession4">
+										<input type="checkbox" id="subprofession4_14" name="subprofession4" value="Barbarzyńca" class="checkbox__subprofession">
+										<label for="subprofession4">Barbarzyńca</label>
+									</div>	
+								</div>
+
+								<div hidden class="subprofession_container cast2">
+									<div class="subprofession5">
+										<input type="checkbox" id="subprofession5_14" name="subprofession5" value="Rycerz" class="checkbox__subprofession">
+										<label for="subprofession5">Rycerz</label>
+									</div>
+									<div class="subprofession6">
+										<input type="checkbox" id="subprofession6_14" name="subprofession6" value="Paladyn" class="checkbox__subprofession">
+										<label for="subprofession6">Paladyn</label>
+									</div>
+									<div class="subprofession7">
+										<input type="checkbox" id="subprofession7_14" name="subprofession7" value="Czarny Rycerz" class="checkbox__subprofession">
+										<label for="subprofession7">Czarny Rycerz</label>
+									</div>					
+								</div>
+
+								<div hidden class="subprofession_container">
+									<div class="subprofession8">
+										<input type="checkbox" id="subprofession8_14" name="subprofession8" value="Złodziej" class="checkbox__subprofession">
+										<label for="subprofession8">Złodziej</label>
+									</div>
+									<div class="subprofession9">
+										<input type="checkbox" id="subprofession9_14" name="subprofession9" value="Zabójca" class="checkbox__subprofession">
+										<label for="subprofession9">Zabójca</label>
+									</div>
+									<div class="subprofession10">
+										<input type="checkbox" id="subprofession10_14" name="subprofession10" value="Kupiec" class="checkbox__subprofession">
+										<label for="subprofession10">Kupiec</label>
+									</div>
+								</div>
+
+								<div hidden class="subprofession_container">
+									<div class="subprofession11">
+										<input type="checkbox" id="subprofession11_14" name="subprofession11" value="Kapłan" class="checkbox__subprofession">
+										<label for="subprofession11">Kapłan</label>
+									</div>
+									<div class="subprofession12">
+										<input type="checkbox" id="subprofession12_14" name="subprofession12" value="Driud" class="checkbox__subprofession">
+										<label for="subprofession12">Driud</label>
+									</div>	
+									<div class="subprofession13">
+										<input type="checkbox" id="subprofession13_14" name="subprofession13" value="Astrolog" class="checkbox__subprofession">
+										<label for="subprofession13">Astrolog</label>
+									</div>
+									<div class="subprofession14">
+										<input type="checkbox" id="subprofession14_14" name="subprofession14" value="Półbóg" class="checkbox__subprofession">
+										<label for="subprofession14">Półbóg</label>
+									</div>
+								</div>
+
+								<div hidden class="subprofession_container">
+									<div class="subprofession15">
+										<input type="checkbox" id="subprofession15_14" name="subprofession15" value="Mag" class="checkbox__subprofession">
+										<label for="subprofession15">Mag</label>
+									</div>
+									<div class="subprofession16">
+										<input type="checkbox" id="subprofession16_14" name="subprofession16" value="Czarnoksiężnik" class="checkbox__subprofession">
+										<label for="subprofession16">Czarnoksiężnik</label>
+									</div>	
+									<div class="subprofession17">
+										<input type="checkbox" id="subprofession17_14" name="subprofession17" value="Iluzjonista" class="checkbox__subprofession">
+										<label for="subprofession17">Iluzjonista</label>
+									</div>
+									<div class="subprofession18">
+										<input type="checkbox" id="subprofession18_14" name="subprofession18" value="Alchemik" class="checkbox__subprofession">
+										<label for="subprofession18">Alchemik</label>
+									</div>
+								</div>
+							</div>
+						</div><br>
+
+					</section>
+
+					<section id="profession_cast5" class="subprofession_cast">
+						<h3>Kasta czarodziejska</h3>
+						<div id="div_profession15" class="subprofession_container checkbox_container profession15">
+							<input type="checkbox" id="profession15" name="profession15" value="Mag" class="checkbox__profession">
+							<label for="profession15">MAG</label>
+							
+							<p>
+								- 10 pkt. do biegłości w mieczach oraz 5 pkt. w łukach. włóczniach i lancach;<br>
+								- infrawizja (zdolność widzenia w naturalnych ciemnościach) o zasięgu równym 1/10 SZ (metrów);<br>
+								- samouzdrowienie 1 pkt. obrażeń po 8 godzinach wypoczynku;
+							</p>
+
+							<div id ="profession_container__subelement-profession15" class="subprofession_container__subelement profession_container__subelement_hidden">
+								<div class="subprofession_container">
+									<div class="subprofession1">
+										<input type="checkbox" id="subprofession1_15" name="subprofession1" value="Wojownik" class="checkbox__subprofession">
+										<label for="subprofession1">Wojownik</label>
+									</div>
+									<div class="subprofession2">
+										<input type="checkbox" id="subprofession2_15" name="subprofession2" value="Łowca" class="checkbox__subprofession">
+										<label for="subprofession2">Łowca</label>
+									</div>
+									<div hidden class="subprofession3">
+										<input type="checkbox" id="subprofession3_15" name="subprofession3" value="Gwardzista" class="checkbox__subprofession">
+										<label for="subprofession3">Gwardzista</label>
+									</div>
+									<div hidden class="subprofession4">
+										<input type="checkbox" id="subprofession4_15" name="subprofession4" value="Barbarzyńca" class="checkbox__subprofession">
+										<label for="subprofession4">Barbarzyńca</label>
+									</div>	
+								</div>
+
+								<div hidden class="subprofession_container cast2">
+									<div hidden class="subprofession5">
+										<input type="checkbox" id="subprofession5_15" name="subprofession5" value="Rycerz" class="checkbox__subprofession">
+										<label for="subprofession5">Rycerz</label>
+									</div>
+									<div hidden class="subprofession6">
+										<input type="checkbox" id="subprofession6_15" name="subprofession6" value="Paladyn" class="checkbox__subprofession">
+										<label for="subprofession6">Paladyn</label>
+									</div>
+									<div hidden class="subprofession7">
+										<input type="checkbox" id="subprofession7_15" name="subprofession7" value="Czarny Rycerz" class="checkbox__subprofession">
+										<label for="subprofession7">Czarny Rycerz</label>
+									</div>					
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession8">
+										<input type="checkbox" id="subprofession8_15" name="subprofession8" value="Złodziej" class="checkbox__subprofession">
+										<label for="subprofession8">Złodziej</label>
+									</div>
+									<div class="subprofession9">
+										<input type="checkbox" id="subprofession9_15" name="subprofession9" value="Zabójca" class="checkbox__subprofession">
+										<label for="subprofession9">Zabójca</label>
+									</div>
+									<div class="subprofession10">
+										<input type="checkbox" id="subprofession10_15" name="subprofession10" value="Kupiec" class="checkbox__subprofession">
+										<label for="subprofession10">Kupiec</label>
+									</div>
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession11">
+										<input type="checkbox" id="subprofession11_15" name="subprofession11" value="Kapłan" class="checkbox__subprofession">
+										<label for="subprofession11">Kapłan</label>
+									</div>
+									<div class="subprofession12">
+										<input type="checkbox" id="subprofession12_15" name="subprofession12" value="Driud" class="checkbox__subprofession">
+										<label for="subprofession12">Driud</label>
+									</div>	
+									<div class="subprofession13">
+										<input type="checkbox" id="subprofession13_15" name="subprofession13" value="Astrolog" class="checkbox__subprofession">
+										<label for="subprofession13">Astrolog</label>
+									</div>
+									<div hidden class="subprofession14">
+										<input type="checkbox" id="subprofession14_15" name="subprofession14" value="Półbóg" class="checkbox__subprofession">
+										<label for="subprofession14">Półbóg</label>
+									</div>
+								</div>
+
+								<div class="subprofession_container">
+									<div hidden class="subprofession15">
+										<input type="checkbox" id="subprofession15_15" name="subprofession15" value="Mag" class="checkbox__subprofession">
+										<label for="subprofession15">Mag</label>
+									</div>
+									<div class="subprofession16">
+										<input type="checkbox" id="subprofession16_15" name="subprofession16" value="Czarnoksiężnik" class="checkbox__subprofession">
+										<label for="subprofession16">Czarnoksiężnik</label>
+									</div>	
+									<div class="subprofession17">
+										<input type="checkbox" id="subprofession17_15" name="subprofession17" value="Iluzjonista" class="checkbox__subprofession">
+										<label for="subprofession17">Iluzjonista</label>
+									</div>
+									<div class="subprofession18">
+										<input type="checkbox" id="subprofession18_15" name="subprofession18" value="Alchemik" class="checkbox__subprofession">
+										<label for="subprofession18">Alchemik</label>
+									</div>
+								</div>
+							</div>
+						</div><br>
+
+						<div id="div_profession16" class="subprofession_container checkbox_container profession16">
+							<input type="checkbox" id="profession16" name="profession16" value="Czarnoksiężnik" class="checkbox__profession">
+							<label for="profession16">CZARNOKSIĘŻNIK</label>
+							
+							<p>
+								- 10 pkt. do biegłości w mieczach oraz 5 pkt. w łukach. włóczniach i lancach;<br>
+								- infrawizja (zdolność widzenia w naturalnych ciemnościach) o zasięgu równym 1/10 SZ (metrów);<br>
+								- samouzdrowienie 1 pkt. obrażeń po 8 godzinach wypoczynku;
+							</p>
+
+							<div id ="profession_container__subelement-profession16" class="subprofession_container__subelement profession_container__subelement_hidden">
+								<div class="subprofession_container">
+									<div class="subprofession1">
+										<input type="checkbox" id="subprofession1_16" name="subprofession1" value="Wojownik" class="checkbox__subprofession">
+										<label for="subprofession1">Wojownik</label>
+									</div>
+									<div class="subprofession2">
+										<input type="checkbox" id="subprofession2_16" name="subprofession2" value="Łowca" class="checkbox__subprofession">
+										<label for="subprofession2">*Łowca</label>
+									</div>
+									<div class="subprofession3">
+										<input type="checkbox" id="subprofession3_16" name="subprofession3" value="Gwardzista" class="checkbox__subprofession">
+										<label for="subprofession3">*Gwardzista</label>
+									</div>
+									<div hidden class="subprofession4">
+										<input type="checkbox" id="subprofession4_16" name="subprofession4" value="Barbarzyńca" class="checkbox__subprofession">
+										<label for="subprofession4">Barbarzyńca</label>
+									</div>	
+								</div>
+
+								<div class="subprofession_container cast2">
+									<div class="subprofession5">
+										<input type="checkbox" id="subprofession5_16" name="subprofession5" value="Rycerz" class="checkbox__subprofession">
+										<label for="subprofession5">Rycerz</label>
+									</div>
+									<div hidden class="subprofession6">
+										<input type="checkbox" id="subprofession6_16" name="subprofession6" value="Paladyn" class="checkbox__subprofession">
+										<label for="subprofession6">Paladyn</label>
+									</div>
+									<div hidden class="subprofession7">
+										<input type="checkbox" id="subprofession7_16" name="subprofession7" value="Czarny Rycerz" class="checkbox__subprofession">
+										<label for="subprofession7">Czarny Rycerz</label>
+									</div>					
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession8">
+										<input type="checkbox" id="subprofession8_16" name="subprofession8" value="Złodziej" class="checkbox__subprofession">
+										<label for="subprofession8">Złodziej</label>
+									</div>
+									<div class="subprofession9">
+										<input type="checkbox" id="subprofession9_16" name="subprofession9" value="Zabójca" class="checkbox__subprofession">
+										<label for="subprofession9">Zabójca</label>
+									</div>
+									<div class="subprofession10">
+										<input type="checkbox" id="subprofession10_16" name="subprofession10" value="Kupiec" class="checkbox__subprofession">
+										<label for="subprofession10">Kupiec</label>
+									</div>
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession11">
+										<input type="checkbox" id="subprofession11_16" name="subprofession11" value="Kapłan" class="checkbox__subprofession">
+										<label for="subprofession11">Kapłan</label>
+									</div>
+									<div hidden class="subprofession12">
+										<input type="checkbox" id="subprofession12_16" name="subprofession12" value="Driud" class="checkbox__subprofession">
+										<label for="subprofession12">Driud</label>
+									</div>	
+									<div class="subprofession13">
+										<input type="checkbox" id="subprofession13_16" name="subprofession13" value="Astrolog" class="checkbox__subprofession">
+										<label for="subprofession13">Astrolog</label>
+									</div>
+									<div hidden class="subprofession14">
+										<input type="checkbox" id="subprofession14_16" name="subprofession14" value="Półbóg" class="checkbox__subprofession">
+										<label for="subprofession14">Półbóg</label>
+									</div>
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession15">
+										<input type="checkbox" id="subprofession15_16" name="subprofession15" value="Mag" class="checkbox__subprofession">
+										<label for="subprofession15">Mag</label>
+									</div>
+									<div hidden class="subprofession16">
+										<input type="checkbox" id="subprofession16_16" name="subprofession16" value="Czarnoksiężnik" class="checkbox__subprofession">
+										<label for="subprofession16">Czarnoksiężnik</label>
+									</div>	
+									<div class="subprofession17">
+										<input type="checkbox" id="subprofession17_16" name="subprofession17" value="Iluzjonista" class="checkbox__subprofession">
+										<label for="subprofession17">Iluzjonista</label>
+									</div>
+									<div class="subprofession18">
+										<input type="checkbox" id="subprofession18_16" name="subprofession18" value="Alchemik" class="checkbox__subprofession">
+										<label for="subprofession18">Alchemik</label>
+									</div>
+								</div>
+							</div>
+						</div><br>
+
+						<div id="div_profession17" class="subprofession_container checkbox_container profession17">
+							<input type="checkbox" id="profession17" name="profession17" value="Iluzjonista" class="checkbox__profession">
+							<label for="profession17">ILUZJONISTA</label>
+							
+							<p>
+								- 10 pkt. do biegłości w mieczach oraz 5 pkt. w łukach. włóczniach i lancach;<br>
+								- infrawizja (zdolność widzenia w naturalnych ciemnościach) o zasięgu równym 1/10 SZ (metrów);<br>
+								- samouzdrowienie 1 pkt. obrażeń po 8 godzinach wypoczynku;
+							</p>
+
+							<div id ="profession_container__subelement-profession17" class="subprofession_container__subelement profession_container__subelement_hidden">
+								<div class="subprofession_container">
+									<div class="subprofession1">
+										<input type="checkbox" id="subprofession1_17" name="subprofession1" value="Wojownik" class="checkbox__subprofession">
+										<label for="subprofession1">Wojownik</label>
+									</div>
+									<div class="subprofession2">
+										<input type="checkbox" id="subprofession2_17" name="subprofession2" value="Łowca" class="checkbox__subprofession">
+										<label for="subprofession2">*Łowca</label>
+									</div>
+									<div class="subprofession3">
+										<input type="checkbox" id="subprofession3_17" name="subprofession3" value="Gwardzista" class="checkbox__subprofession">
+										<label for="subprofession3">*Gwardzista</label>
+									</div>
+									<div hidden class="subprofession4">
+										<input type="checkbox" id="subprofession4_17" name="subprofession4" value="Barbarzyńca" class="checkbox__subprofession">
+										<label for="subprofession4">Barbarzyńca</label>
+									</div>	
+								</div>
+
+								<div hidden class="subprofession_container cast2">
+									<div hidden class="subprofession5">
+										<input type="checkbox" id="subprofession5_17" name="subprofession5" value="Rycerz" class="checkbox__subprofession">
+										<label for="subprofession5">Rycerz</label>
+									</div>
+									<div hidden class="subprofession6">
+										<input type="checkbox" id="subprofession6_17" name="subprofession6" value="Paladyn" class="checkbox__subprofession">
+										<label for="subprofession6">Paladyn</label>
+									</div>
+									<div hidden class="subprofession7">
+										<input type="checkbox" id="subprofession7_17" name="subprofession7" value="Czarny Rycerz" class="checkbox__subprofession">
+										<label for="subprofession7">Czarny Rycerz</label>
+									</div>					
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession8">
+										<input type="checkbox" id="subprofession8_17" name="subprofession8" value="Złodziej" class="checkbox__subprofession">
+										<label for="subprofession8">Złodziej</label>
+									</div>
+									<div class="subprofession9">
+										<input type="checkbox" id="subprofession9_17" name="subprofession9" value="Zabójca" class="checkbox__subprofession">
+										<label for="subprofession9">Zabójca</label>
+									</div>
+									<div class="subprofession10">
+										<input type="checkbox" id="subprofession10_17" name="subprofession10" value="Kupiec" class="checkbox__subprofession">
+										<label for="subprofession10">Kupiec</label>
+									</div>
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession11">
+										<input type="checkbox" id="subprofession11_17" name="subprofession11" value="Kapłan" class="checkbox__subprofession">
+										<label for="subprofession11">Kapłan</label>
+									</div>
+									<div hidden class="subprofession12">
+										<input type="checkbox" id="subprofession12_17" name="subprofession12" value="Driud" class="checkbox__subprofession">
+										<label for="subprofession12">Driud</label>
+									</div>	
+									<div class="subprofession13">
+										<input type="checkbox" id="subprofession13_17" name="subprofession13" value="Astrolog" class="checkbox__subprofession">
+										<label for="subprofession13">Astrolog</label>
+									</div>
+									<div hidden class="subprofession14">
+										<input type="checkbox" id="subprofession14_17" name="subprofession14" value="Półbóg" class="checkbox__subprofession">
+										<label for="subprofession14">Półbóg</label>
+									</div>
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession15">
+										<input type="checkbox" id="subprofession15_17" name="subprofession15" value="Mag" class="checkbox__subprofession">
+										<label for="subprofession15">Mag</label>
+									</div>
+									<div class="subprofession16">
+										<input type="checkbox" id="subprofession16_17" name="subprofession16" value="Czarnoksiężnik" class="checkbox__subprofession">
+										<label for="subprofession16">Czarnoksiężnik</label>
+									</div>	
+									<div hidden class="subprofession17">
+										<input type="checkbox" id="subprofession17_17" name="subprofession17" value="Iluzjonista" class="checkbox__subprofession">
+										<label for="subprofession17">Iluzjonista</label>
+									</div>
+									<div class="subprofession18">
+										<input type="checkbox" id="subprofession18_17" name="subprofession18" value="Alchemik" class="checkbox__subprofession">
+										<label for="subprofession18">Alchemik</label>
+									</div>
+								</div>
+							</div>
+						</div><br>
+
+						<div id="div_profession18" class="subprofession_container checkbox_container profession18">
+							<div class="prof__item-text">
+							<input type="checkbox" id="profession18" name="profession18" value="Alchemik" class="checkbox__profession">
+							<label for="profession18">ALCHEMIK</label>
+							
+							<p>
+								- 10 pkt. do biegłości w mieczach oraz 5 pkt. w łukach. włóczniach i lancach;<br>
+								- infrawizja (zdolność widzenia w naturalnych ciemnościach) o zasięgu równym 1/10 SZ (metrów);<br>
+								- samouzdrowienie 1 pkt. obrażeń po 8 godzinach wypoczynku;
+							</p>
+							</div>
+
+							<div id ="profession_container__subelement-profession18" class="subprofession_container__subelement profession_container__subelement_hidden">
+								<div class="subprofession_container">
+									<div class="subprofession1">
+										<input type="checkbox" id="subprofession1_18" name="subprofession1" value="Wojownik" class="checkbox__subprofession">
+										<label for="subprofession1">Wojownik</label>
+									</div>
+									<div class="subprofession2">
+										<input type="checkbox" id="subprofession2_18" name="subprofession2" value="Łowca" class="checkbox__subprofession">
+										<label for="subprofession2">*Łowca</label>
+									</div>
+									<div class="subprofession3">
+										<input type="checkbox" id="subprofession3_18" name="subprofession3" value="Gwardzista" class="checkbox__subprofession">
+										<label for="subprofession3">*Gwardzista</label>
+									</div>
+									<div hidden class="subprofession4">
+										<input type="checkbox" id="subprofession4_18" name="subprofession4" value="Barbarzyńca" class="checkbox__subprofession">
+										<label for="subprofession4">Barbarzyńca</label>
+									</div>	
+								</div>
+
+								<div class="subprofession_container cast2">
+									<div class="subprofession5">
+										<input type="checkbox" id="subprofession5_18" name="subprofession5" value="Rycerz" class="checkbox__subprofession">
+										<label for="subprofession5">Rycerz</label>
+									</div>
+									<div hidden class="subprofession6">
+										<input type="checkbox" id="subprofession6_18" name="subprofession6" value="Paladyn" class="checkbox__subprofession">
+										<label for="subprofession6">Paladyn</label>
+									</div>
+									<div hidden class="subprofession7">
+										<input type="checkbox" id="subprofession7_18" name="subprofession7" value="Czarny Rycerz" class="checkbox__subprofession">
+										<label for="subprofession7">Czarny Rycerz</label>
+									</div>					
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession8">
+										<input type="checkbox" id="subprofession8_18" name="subprofession8" value="Złodziej" class="checkbox__subprofession">
+										<label for="subprofession8">Złodziej</label>
+									</div>
+									<div class="subprofession9">
+										<input type="checkbox" id="subprofession9_18" name="subprofession9" value="Zabójca" class="checkbox__subprofession">
+										<label for="subprofession9">Zabójca</label>
+									</div>
+									<div class="subprofession10">
+										<input type="checkbox" id="subprofession10_18" name="subprofession10" value="Kupiec" class="checkbox__subprofession">
+										<label for="subprofession10">Kupiec</label>
+									</div>
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession11">
+										<input type="checkbox" id="subprofession11_18" name="subprofession11" value="Kapłan" class="checkbox__subprofession">
+										<label for="subprofession11">Kapłan</label>
+									</div>
+									<div hidden class="subprofession12">
+										<input type="checkbox" id="subprofession12_18" name="subprofession12" value="Driud" class="checkbox__subprofession">
+										<label for="subprofession12">Driud</label>
+									</div>	
+									<div class="subprofession13">
+										<input type="checkbox" id="subprofession13_18" name="subprofession13" value="Astrolog" class="checkbox__subprofession">
+										<label for="subprofession13">Astrolog</label>
+									</div>
+									<div hidden class="subprofession14">
+										<input type="checkbox" id="subprofession14_18" name="subprofession14" value="Półbóg" class="checkbox__subprofession">
+										<label for="subprofession14">Półbóg</label>
+									</div>
+								</div>
+
+								<div class="subprofession_container">
+									<div class="subprofession15">
+										<input type="checkbox" id="subprofession15_18" name="subprofession15" value="Mag" class="checkbox__subprofession">
+										<label for="subprofession15">Mag</label>
+									</div>
+									<div class="subprofession16">
+										<input type="checkbox" id="subprofession16_18" name="subprofession16" value="Czarnoksiężnik" class="checkbox__subprofession">
+										<label for="subprofession16">Czarnoksiężnik</label>
+									</div>	
+									<div hidden class="subprofession17">
+										<input type="checkbox" id="subprofession17_18" name="subprofession17" value="Iluzjonista" class="checkbox__subprofession">
+										<label for="subprofession17">Iluzjonista</label>
+									</div>
+									<div class="subprofession18">
+										<input type="checkbox" id="subprofession18_18" name="subprofession18" value="Alchemik" class="checkbox__subprofession">
+										<label for="subprofession18">Alchemik</label>
+									</div>
+								</div>
+							</div>
+
+						</div><br>
+					</div>
+				</section>
+
+				
+
+				<section id="section5" class="main__content-subsection endpoints--blank-section">
+					<h3 class="stylized">V. LOSOWANIE WZROSTU I WAGI</h3>
+					<h3>Losowanie wzrosu i wagi</h3>
+						<p>Zestawienie wyników rzutu k100 oraz ich konsekwencji dla wzrostu i wagi</p>
+						<table id ="table1_origin_place_of_birth"class="table_origin">
+							<tr id="table1_tr1">
+								<td class="td__k100">01-20</td>
+								<td><b>Ostrogar</b> — stolica Archipelagu Centralnego i orków; ok.
+									153 tys. mieszkańców — orki, półorki, ludzie, półolbrzymy,
+									półelfy, elfy, gnomy, krasnoludy, hobbici;
+								</td>
+							</tr>
+							<tr>
+								<td class="td__k100">21-80</td>
+								<td><b>Ostrogar</b> — stolica Archipelagu Centralnego i orków; ok.
+									153 tys. mieszkańców — orki, półorki, ludzie, półolbrzymy,
+									półelfy, elfy, gnomy, krasnoludy, hobbici;
+								</td>
+							</tr>
+							<tr>
+								<td class="td__k100">81-99</td>
+								<td><b>Ostrogar</b> — stolica Archipelagu Centralnego i orków; ok.
+									153 tys. mieszkańców — orki, półorki, ludzie, półolbrzymy,
+									półelfy, elfy, gnomy, krasnoludy, hobbici;
+								</td>
+							</tr>
+							<tr>
+								<td class="td__k100">00</td>
+								<td><b>Ostrogar</b> — stolica Archipelagu Centralnego i orków; ok.
+									153 tys. mieszkańców — orki, półorki, ludzie, półolbrzymy,
+									półelfy, elfy, gnomy, krasnoludy, hobbici;
+								</td>
+							</tr>
+						</table>
+
+						<p>V.a Tabela WZROST, WAGA I WIEK</p>
+						<table id ="table1_origin_place_of_birth"class="table_origin">
+							<tr id="table1_tr1">
+								<td class="td__k100">RASA</td>
+								<td>WZROST</td>
+								<td></td>
+								<td></td>
+								<td>WAGA</td>
+								<td></td>
+								<td></td>
+								<td>WIEK DOJRZAŁOŚCI</td>
+							</tr>
+							<tr>
+								<td> - </td>
+
+								<td>min.</td>
+								<td>średni</td>
+								<td>max.</td>
+
+								<td>min.</td>
+								<td>średni</td>
+								<td>max.</td>
+
+								<td> - </td>	
+							</tr>
+							<tr>
+								<td>LUDZIE</td>
+
+								<td>150</td>
+								<td>170-180</td>
+								<td>200</td>
+
+								<td>50</td>
+								<td>70-80</td>
+								<td>100</td>
+
+								<td>15</td>
+							</tr>
+							<tr>
+								<td>LUDZIE</td>
+
+								<td>150</td>
+								<td>170-180</td>
+								<td>200</td>
+
+								<td>50</td>
+								<td>70-80</td>
+								<td>100</td>
+
+								<td>15</td>
+							</tr>
+							<tr>
+								<td>LUDZIE</td>
+
+								<td>150</td>
+								<td>170-180</td>
+								<td>200</td>
+
+								<td>50</td>
+								<td>70-80</td>
+								<td>100</td>
+
+								<td>15</td>
+							</tr>
+							<tr>
+								<td>LUDZIE</td>
+
+								<td>150</td>
+								<td>170-180</td>
+								<td>200</td>
+
+								<td>50</td>
+								<td>70-80</td>
+								<td>100</td>
+
+								<td>15</td>
+							</tr>
+							<tr>
+								<td>LUDZIE</td>
+
+								<td>150</td>
+								<td>170-180</td>
+								<td>200</td>
+
+								<td>50</td>
+								<td>70-80</td>
+								<td>100</td>
+
+								<td>15</td>
+							</tr>
+							<tr>
+								<td>LUDZIE</td>
+
+								<td>150</td>
+								<td>170-180</td>
+								<td>200</td>
+
+								<td>50</td>
+								<td>70-80</td>
+								<td>100</td>
+
+								<td>15</td>
+							</tr>
+							<tr>
+								<td>LUDZIE</td>
+
+								<td>150</td>
+								<td>170-180</td>
+								<td>200</td>
+
+								<td>50</td>
+								<td>70-80</td>
+								<td>100</td>
+
+								<td>15</td>
+							</tr>
+							<tr>
+								<td>LUDZIE</td>
+
+								<td>150</td>
+								<td>170-180</td>
+								<td>200</td>
+
+								<td>50</td>
+								<td>70-80</td>
+								<td>100</td>
+
+								<td>15</td>
+							</tr>
+							<tr>
+								<td>LUDZIE</td>
+
+								<td>150</td>
+								<td>170-180</td>
+								<td>200</td>
+
+								<td>50</td>
+								<td>70-80</td>
+								<td>100</td>
+
+								<td>15</td>
+							</tr>
+						</table>
+				</section>
+
+				<section id="endpoints--blank-section-4" class="main__content-subsection endpoints--blank-section">
+					<h3>Blank Subsection 4</h3>
+					<p class="endpoints--blank-section__paragraph">…</p>
+				</section>
+				<section id="endpoints--blank-section-5" class="main__content-subsection endpoints--blank-section">
+					<h3>Blank Subsection 5</h3>
+					<p class="endpoints--blank-section__paragraph">…</p>
+				</section>
+				<section id="endpoints--blank-section-6" class="main__content-subsection endpoints--blank-section">
+					<h3>Blank Subsection 6</h3>
+					<p class="endpoints--blank-section__paragraph">…</p>
+				</section>
+			</section>
+
+			<section id="end--sections" class="main__content-section end--sections">
+				<section id="links" class="main__content-subsection end--sections__links">
+					<h2>Links</h2>
+					<ol class="links-list">
+						<li class="end--sections__links-list__item links-list__item"><a href="https://en.bem.info/methodology/quick-start/" target="_blank" class="links-list__item__link">Quick start to BEM methodology</a></li>
+						<li class="end--sections__links-list__item links-list__item"><a href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank" class="links-list__item__link">WAI-ARIA Overview</a></li>
+						<li class="end--sections__links-list__item links-list__item"><a href="https://webworkshop.pl/czym-sa-aria-labels/" target="_blank" class="links-list__item__link">ARIA Labels - PL</a></li>
+						<li class="end--sections__links-list__item links-list__item"><a href="https://css-tricks.com/sticky-table-of-contents-with-scrolling-active-states/?fbclid=IwAR1_t5U_erE-0gUrxswpj9UW8zCuVRisAj51UL49_KzNIc4dNDt-kfdWIrI" target="_blank" class="links-list__item__link">Sticky Table of Contents with Scrolling Active States</a></li>
+						<li class="end--sections__links-list__item links-list__item"><a href="https://inclusive-components.design/" target="_blank" class="links-list__item__link">Inclusive Components</a>
+							<ul class="links-list">
+								<li class="end--sections__links-list__item links-list__item"><a href="https://inclusive-components.design/collapsible-sections/" target="_blank" class="links-list__item__link">Collapsible Sections</a></li>
+								<li class="end--sections__links-list__item links-list__item"><a href="https://inclusive-components.design/a-content-slider/" target="_blank" class="links-list__item__link">Content Slider</a></li>
+								<li class="end--sections__links-list__item links-list__item"><a href="https://inclusive-components.design/menus-menu-buttons/" target="_blank" class="links-list__item__link">Menus & Menu Buttons</a></li>
+								<li class="end--sections__links-list__item links-list__item"><a href="https://inclusive-components.design/cards/" target="_blank" class="links-list__item__link">Cards</a></li>
+							</ul>
+						</li>
+						<li class="end--sections__links-list__item links-list__item"><a href="https://www.freevector.com/free-checkbox-vector-20867" class="links-list__item__link">FreeVector.com</a></li>
+
+					</ol>
+				</section>	
+
+				<li class="cards__item card">
+					<div class="cards__item-img img"><img src="images/e44.jpg" alt=""></div>
+					<div class="cards__item-text text">
+						<h2><a href="#card-link" class="cards__link"  aria-describedby="description-card">A card link </a></h2>
+						<p>Commodo ut laborum fugiat aliqua eiusmod voluptate pariatur.</p>
+						<small class="cards__item-text_readmore" aria-hidden="true" id="description-card">Read more <span>&rarr;</span></small>
+					</div>
+				</li>
+			</section>
+		</div>
+		</div>
+
+
+
+		<div class="window__InnerSize" style="border: 1px solid #111; margin-top: 10px;">
+			<span class="window__InnerWidth"></span>
+			<span> x </span>
+			<span class="window__InnerHeight"></span>
+		</div>
+	
+		<div class="character__states">
+			<ol class="character__states_list ordered-list">
+				<li class="character__states__item"><span class="character__states_name">(Imię Postaci)</span>
+					<ul class="unordered-list">
+						<li class="menu__item">I. WYBÓR RASY I PŁCI
+							<ul class="menu__unordered-list">
+								<li  class="menu__item character__states__item1">Płeć: <span id="character__states_gender">   —</span></li>
+								<li  class="menu__item character__states__item1">Rasa: <span id="character__states_race">   —</span></li>
+							</ul>
+						</li>
+						<li class="menu__item">II. LOSOWANIE POCHODZENIA
+							<ul class="unordered-list">
+								<li class="menu__item character__states__item1">Miejsce urodzenia: <span id="character__states_birth">   —</span></li>
+								<li class="menu__item character__states__item1">Wyjściowa klasa społeczna: <span id="character__states_social">   —</span></li>
+								<li class="menu__item character__states__item1">Roczny dochód: <span id="character__states_social_benefice">0</span> złt</li>
+							</ul>
+						</li>
+						<li class="menu__item">III. LOSOWANIE UŁOMNOŚCI I ZDOLNOŚCI NADNATURALNYCH
+							<ul class="menu__unordered-list">
+								<li  class="menu__item character__states__item1">Ułomność: <span id="character__states_disability1">   —</span></li>
+								<li  class="menu__item character__states__item1">Zdolność nadnaturalna: <span id="character__states_abieliety1">   —</span></li>
+							</ul>
+						</li>
+						<li class="menu__item">IV. WYBÓR PROFESJI
+							<ul class="menu__unordered-list">
+								<li  class="menu__item character__states__item1">Profesja: <span id="character__states_profession1">   —</span><span id="character__states_profession2"></span></li>
+							</ul>
+						</li>
+						<li class="menu__item">V. LOSOWANIE WZROSTU I WAGI
+							<ul class="menu__unordered-list">
+								<li  class="menu__item character__states__item1">Wzrost: <span id="character__states_height">   —</span></li>
+								<li  class="menu__item character__states__item1">Waga: <span id="character__states_weight">   —</span></li>
+							</ul>
+						</li>
+						<li class="character__states__item"></li>
+						<li class="character__states__item"></li>
+						<li role="menuitem" class="menu__item"></li>
+					</ul>
+				</li>
+			<li role="menuitem" class="character__states__item"><a href="#links" class="menu__link">Links</a></li>
+			</ol>
+		</div>
+
+</main>
+
+<!--
+	<script src="js/menu__active--track.js"></script>
+	<script src="js/main__content-header.js"></script>
+	<script src="js/section--nav__overlay.js"></script>
+	<script src="js/collapsible-section.js"></script>
+	<script src="js/cards_item.js"></script>
+-->
+
+<script src="js/kc_chapter_I.js"></script>
+<script src="js/kc_chapter_II.js"></script>
+<script src="js/kc_chapter_III.js"></script>
+<script src="js/kc_chapter_IV.js"></script>
+<script src="js/kc_chapter_IV_professions2.js"></script>
+
+<script src="build/scripts.js"></script>
+
+
+</body>
+</html>

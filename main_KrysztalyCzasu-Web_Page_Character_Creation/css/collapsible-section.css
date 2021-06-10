@@ -1,0 +1,67 @@
+.main__content-subsection > h4 + div {
+	width: 100%;
+}
+
+h4 .collapsible-section__button {
+	all: inherit;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0.5em;
+	border: 1px solid #efefef;
+	border-radius: 0.25rem;
+}
+
+h4 .collapsible-section__button:focus svg {
+	outline: 2px solid;
+}
+
+.collapsible-section__button svg {
+	height: 1em;
+	margin-left: 0.5em;
+	margin-right: 0.5rem;
+}
+
+.collapsible-section__button:hover {
+	cursor: pointer;
+}
+
+[aria-expanded="true"] .vert {
+	opacity: 0.0;
+	transition: all 100ms;
+}
+
+[aria-expanded] rect {
+  fill: currentColor;
+}
+
+.collapsible-section__content {
+	margin: 0;
+	padding: 0.5rem;
+	position: relative;
+	width: 100%;
+}
+
+.collapsible-section__item{
+	overflow-x: hidden;
+}
+
+.target-unexpanded {
+	height: 0;
+	opacity: 0.0;
+	padding: 0.5rem;
+	border: 1px solid #efefef;
+	border-radius: 0.25rem;
+	overflow: auto;
+	overflow-y: hidden;
+}
+
+.target-expanded {
+	height: 80%;
+	opacity: 1.0;
+	padding: 0.5rem;
+	border: 1px solid #efefef;
+	border-radius: 0.25rem;
+	overflow: auto;
+	overflow-y: hidden;
+}

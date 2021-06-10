@@ -1,0 +1,22 @@
+.subprofession_container__subelement {
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+@supports (display: grid) {
+  .subprofession_container__subelement {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+  }
+
+  
+}
+
+.profession_cast {
+  border-top: 1px solid #dddddd;
+}
+
+.subprofession_container {
+  
+}
+
